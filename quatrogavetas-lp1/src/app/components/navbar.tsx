@@ -18,8 +18,16 @@ export default function Navbar(){
     }, [landingOrigin])
 
     return (
-        <nav className="w-full h-16 bg-carbon-0  content-between pt-4 px-6 mb-6">
-                <div className="items-center w-full flex justify-between">
+        <nav  className="
+            w-full 
+            h-16 
+            sticky top-0 
+            px-6 pt-4 mb-6 
+            z-50
+            bg-transparent
+            shadow-[inset_0_20px_20px_20px_rgba(255,255,255,0.9)]
+        ">
+                <div className="w-full flex justify-between items-start">
                     <Link href={`/${landingOrigin}`} className="text-amber-900 items-center pr-4"><Image alt="Logo da Palaga" src={PalagaLogo}></Image></Link>
                     <HamburgerButton />
                 </div>

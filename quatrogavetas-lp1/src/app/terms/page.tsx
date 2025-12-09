@@ -1,10 +1,12 @@
+import Button from "../components/button"
+
 export default function TermsOfUse() {
     return(
         <div className="w-full items-center justify-center flex">
             <div className="max-w-[580px]">
                 <h1 className="text-carbon-800 text-5xl leading-none tracking-[-0.4px] pb-2">Políticas de privacidade</h1>
                 <h3 className="text-carbon-400 text-2xl/[32px] pt-2">Atualizado em 6 de dezembro de 2025</h3>
-            
+
                 <div className="mt-10 text-xl/[29.2px] text-carbon-800">
                     <p className="mb-[29.2px]">A presente Política de Privacidade descreve como o site www.palaga.com.br, mantido pela Interception Digital LTDA (CNPJ 49.821.411/0001-37), com sede em Rio Grande/RS, coleta, utiliza e protege os dados pessoais dos usuários. Ao acessar ou utilizar este site, o usuário declara estar ciente e de acordo com as práticas descritas neste documento.</p>
                     <p className="mb-[29.2px]">Este site tem como objetivo a divulgação de conteúdos sobre organização pessoal e a apresentação de produtos digitais oferecidos pela marca Pálaga. Para fornecer a melhor experiência possível, utilizamos ferramentas que coletam dados de navegação, como cookies, identificadores de dispositivo e informações sobre interação com páginas e conteúdos. Esses dados podem ser utilizados para fins estatísticos, otimização de navegação, personalização de anúncios e medição de desempenho de campanhas. Entre os dados coletados automaticamente estão endereço IP, tipo de navegador, páginas visitadas, tempo de permanência e outros elementos técnicos comumente utilizados por plataformas de analytics e publicidade.</p>
