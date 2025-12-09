@@ -58,9 +58,9 @@ export default function HamburgerButton() {
             : "opacity-0  pointer-events-none"
         }
         `}>
-          <Button>Produtos</Button>
-          <Button>Cursos</Button>
-          <Button>Contatos</Button>
+          <Button variant="default">Produtos</Button>
+          <Button variant="red">Cursos</Button>
+          <Button variant="dark">Contatos</Button>
       </div>
     </div>
   );
