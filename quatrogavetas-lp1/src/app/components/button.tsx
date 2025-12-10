@@ -5,8 +5,7 @@ type ButtonProps = {
   children: ReactNode;
   variant?: 'default' | 'red' | 'dark';
   href: string;
- 
-  exeternalButton?: Boolean;
+  exeternalButton?: boolean;
 };
 
 
