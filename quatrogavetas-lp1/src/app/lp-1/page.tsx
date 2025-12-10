@@ -1,7 +1,5 @@
 import LocalStorageLpRegister from "../components/localstoragelpregister";
 
-
-
 export default function LandingPageOne(){
     return(
     <>
