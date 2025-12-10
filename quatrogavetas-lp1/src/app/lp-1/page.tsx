@@ -1,6 +1,4 @@
-import  ImgSidedByContent from "../components/imgsidedbytext";
 import LocalStorageLpRegister from "../components/localstoragelpregister";
-import Questions from "../components/questions";
 
 
 

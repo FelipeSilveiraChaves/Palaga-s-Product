@@ -21,10 +21,12 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${dinRounded.className} antialiased min-h-screen bg-carbon-0`}
+        className={`${dinRounded.className} antialiased min-h-screen flex flex-col bg-carbon-0`}
       >
         <Navbar />
-          {children}
+          <main className="flex-1 flex">
+            {children}
+          </main>
         <Footer />
       </body>
     </html>

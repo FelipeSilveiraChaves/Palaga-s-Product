@@ -28,7 +28,7 @@ export default function Navbar(){
             shadow-[inset_0_20px_20px_20px_rgba(255,255,255,0.9)]
         ">
                 <div className="w-full flex justify-between items-start">
-                    <Link href={`/${landingOrigin}`} className="text-amber-900 items-center pr-4"><Image alt="Logo da Palaga" src={PalagaLogo}></Image></Link>
+                    <Link href={`/${landingOrigin}`}><Image alt="Logo da Palaga" src={PalagaLogo}></Image></Link>
                     <HamburgerButton />
                 </div>
         </nav>

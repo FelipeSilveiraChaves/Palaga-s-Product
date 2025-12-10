@@ -8,7 +8,7 @@ type ButtonProps = {
 
 export default function Button({children, variant = 'default'} :ButtonProps) {
     const BaseButtonStyleClass = 
-        "rounded-r-full rounded-l-full text-[19px] px-4 h-12 flex justify-center items-center outline-2 outline-carbon-0 cursor-pointer"
+        "rounded-r-full rounded-l-full text-[19px] px-4 h-12 flex justify-center items-center outline-4 outline-carbon-0 cursor-pointer"
 
     const VariantsButtonSyleClass = {
         default: 'bg-carbon-50 text-carbon-800',

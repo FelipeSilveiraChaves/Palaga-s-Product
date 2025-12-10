@@ -11,7 +11,7 @@ export default function HamburgerButton() {
     <div className="flex flex-col items-end">
       <button
         onClick={toggle}
-        className="w-12 h-12 rounded-full bg-carbon-800 flex items-center justify-center pb-1 cursor-pointer"
+        className="w-12 h-12 rounded-full bg-carbon-800 flex items-center justify-center pb-1 cursor-pointer outline-4 outline-carbon-0"
       >
         {/* Área de 48x48 dentro do círculo */}
         <div className="relative w-12 h-12 flex items-center justify-center">
