@@ -1,0 +1,71 @@
+"use client";
+
+import useEmblaCarousel from "embla-carousel-react";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
+
+import { useEffect, useCallback } from "react";
+
+export default function EmblaCarousel() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: true,
+  });
+
+  const scrollNext = useCallback(() => {
+    if (!emblaApi) return;
+    emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  const scrollPrev = useCallback(() => {
+    if (!emblaApi) return;
+    emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (emblaApi) {
+      console.log("Embla iniciado");
+    }
+  }, [emblaApi]);
+
+  return (
+    <div className="w-screen mt-10">
+
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex gap-10">
+          <div className="flex-[0_0_50%] min-w-0 bg-carbon-50 h-96 rounded-full flex items-center justify-center">
+            Slide 1
+          </div>
+          <div className="flex-[0_0_50%] min-w-0 bg-carbon-50 h-96 rounded-full flex items-center justify-center">
+            Slide 2
+          </div>
+          <div className="flex-[0_0_50%] min-w-0 bg-carbon-50 h-96 rounded-full flex items-center justify-center">
+            Slide 3
+          </div>
+        </div>
+      </div>
+
+      <div className="flex-1 flex justify-center gap-2 pt-4">
+        <button
+          onClick={scrollPrev}
+          className="
+            w-12 h-12 rounded-full 
+            bg-carbon-800 text-carbon-0 
+            flex items-center justify-center
+          "
+        >
+          <FaChevronLeft className="w-5 h-5" />
+        </button>
+
+        <button
+          onClick={scrollNext}   
+          className="
+            w-12 h-12 rounded-full 
+            bg-carbon-800 text-carbon-0 
+            flex items-center justify-center
+          "
+        >
+          <FaChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+    </div>
+  );
+}
