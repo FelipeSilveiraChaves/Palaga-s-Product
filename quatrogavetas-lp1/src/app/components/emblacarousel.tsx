@@ -28,17 +28,26 @@ export default function EmblaCarousel() {
 
   return (
     <div className="w-screen mt-10">
-
       <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex gap-10">
-          <div className="flex-[0_0_50%] min-w-0 bg-carbon-50 h-96 rounded-full flex items-center justify-center">
-            Slide 1
+        {/* container com margem negativa */}
+        <div className="flex -ml-6">
+          {/* slide: padding-left vira o “gap” */}
+          <div className="pl-6 flex-[0_0_50%] min-w-0">
+            <div className="bg-carbon-50 h-96 rounded-full flex items-center justify-center">
+              Slide 1
+            </div>
           </div>
-          <div className="flex-[0_0_50%] min-w-0 bg-carbon-50 h-96 rounded-full flex items-center justify-center">
-            Slide 2
+
+          <div className="pl-6 flex-[0_0_50%] min-w-0">
+            <div className="bg-carbon-50 h-96 rounded-full flex items-center justify-center">
+              Slide 2
+            </div>
           </div>
-          <div className="flex-[0_0_50%] min-w-0 bg-carbon-50 h-96 rounded-full flex items-center justify-center">
-            Slide 3
+
+          <div className="pl-6 flex-[0_0_50%] min-w-0">
+            <div className="bg-carbon-50 h-96 rounded-full flex items-center justify-center">
+              Slide 3
+            </div>
           </div>
         </div>
       </div>
