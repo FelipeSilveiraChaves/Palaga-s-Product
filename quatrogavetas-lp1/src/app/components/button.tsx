@@ -23,7 +23,7 @@ export default function Button({
   className,
 }: ButtonProps) {
   const base =
-  "rounded-full text-[18px] leading-[12px] px-[18px] pt-4 pb-[17px] inline-flex items-center justify-center " +
+  "rounded-full text-[18px] leading-none px-[18px] pt-3 pb-[13px] inline-flex items-center justify-center " +
   "cursor-pointer select-none transition-colors duration-150 ease-out";
 
 
