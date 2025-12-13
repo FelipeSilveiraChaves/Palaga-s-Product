@@ -23,12 +23,13 @@ export default function Button({
   className,
 }: ButtonProps) {
   const base =
-    "rounded-full text-[19px] px-4 h-12 inline-flex justify-center items-center cursor-pointer select-none " +
-    "transition-colors duration-150 ease-out";
+  "rounded-full text-[19px] leading-[19px] px-[18px] pt-4 pb-[17px] inline-flex items-center justify-center " +
+  "cursor-pointer select-none transition-colors duration-150 ease-out";
+
 
   const variants = {
     default:
-      "bg-carbon-50 text-carbon-800 hover:bg-[#E5E5E5] outline outline-1 outline-[#E5E5E5]",
+      "bg-carbon-50 text-carbon-800 hover:bg-[#E5E5E5]  outline-1 outline-[#E5E5E5]",
     red: "bg-[#FFC0C0] text-[#FF0000] hover:bg-[#FFB3B3]",
     dark: "bg-carbon-800 text-carbon-50 hover:bg-carbon-700",
   };

@@ -59,16 +59,17 @@ export default function HamburgerButton() {
           />
         </div>
       </motion.button>
-      <div className={`gap-2 flex-1 flex flex-col items-end mt-2 transition-opacity duration-200 ease-in-out
+      <div className={`gap-2.5 flex-1 flex flex-col items-end mt-2 transition-opacity duration-200 ease-in-out
         ${
           isOpen 
             ? "opacity-100 pointer-events-auto"
             : "opacity-0  pointer-events-none"
         }
         `}>
-          <Button href="products">Produtos</Button>
+          <Button href="products">Estojos</Button>
+          <Button href="">Cadernos</Button>
+          <Button href="">Canetas</Button>
           <Button href="">Cursos</Button>
-          <Button href="">Contatos</Button>
       </div>
     </div>
   );
