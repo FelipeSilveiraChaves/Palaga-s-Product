@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "motion/react";
 import { useState } from "react";
 import Button from "./button";
 
@@ -7,9 +8,16 @@ export default function HamburgerButton() {
 
   const toggle = () => setIsOpen(!isOpen);
 
+
+    const motionProps = {
+    whileHover: { scale: 1.06 },
+    whileTap: { scale: 0.94 },
+    transition: { type: "spring", stiffness: 520, damping: 32, mass: 0.6 },
+  } as const;
   return (
     <div className="flex flex-col items-end">
-      <button
+      <motion.button
+        {...motionProps}
         onClick={toggle}
         className="w-12 h-12 rounded-full bg-carbon-800 flex items-center justify-center pb-1 cursor-pointer outline-4 outline-carbon-0"
       >
@@ -50,7 +58,7 @@ export default function HamburgerButton() {
             `}
           />
         </div>
-      </button>
+      </motion.button>
       <div className={`gap-2 flex-1 flex flex-col items-end mt-2 transition-opacity duration-200 ease-in-out
         ${
           isOpen 
@@ -59,8 +67,8 @@ export default function HamburgerButton() {
         }
         `}>
           <Button href="products">Produtos</Button>
-          <Button href="cursos">Cursos</Button>
-          <Button href="produtos">Contatos</Button>
+          <Button href="">Cursos</Button>
+          <Button href="">Contatos</Button>
       </div>
     </div>
   );

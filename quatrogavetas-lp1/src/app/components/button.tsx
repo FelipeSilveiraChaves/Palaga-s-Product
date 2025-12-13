@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ReactNode, forwardRef } from "react";
+import { ReactNode } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
@@ -13,7 +13,6 @@ type ButtonProps = {
   className?: string;
 };
 
-// motion() em cima do Next Link
 const MotionLink = motion(Link);
 
 export default function Button({
@@ -24,12 +23,14 @@ export default function Button({
   className,
 }: ButtonProps) {
   const base =
-    "rounded-full text-[19px] px-4 h-12 inline-flex justify-center items-center outline-4 outline-carbon-0 cursor-pointer select-none transform-gpu will-change-transform";
+    "rounded-full text-[19px] px-4 h-12 inline-flex justify-center items-center cursor-pointer select-none " +
+    "transition-colors duration-150 ease-out";
 
   const variants = {
-    default: "bg-carbon-50 text-carbon-800",
-    red: "bg-[#FFC0C0] text-[#FF0000]",
-    dark: "text-carbon-50 bg-carbon-800",
+    default:
+      "bg-carbon-50 text-carbon-800 hover:bg-[#E5E5E5] outline outline-1 outline-[#E5E5E5]",
+    red: "bg-[#FFC0C0] text-[#FF0000] hover:bg-[#FFB3B3]",
+    dark: "bg-carbon-800 text-carbon-50 hover:bg-carbon-700",
   };
 
   const classes = cn(base, variants[variant], className);
