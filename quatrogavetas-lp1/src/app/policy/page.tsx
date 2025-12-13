@@ -1,5 +1,6 @@
 import EmblaCarousel from "../components/emblacarousel"
 
+
 export default function privacyPolicy() {
     return(
         <div className="w-full items-center justify-center flex px-6 flex-col" >
@@ -15,6 +16,7 @@ export default function privacyPolicy() {
                 </div>
             </div>
             <EmblaCarousel />
+
             <div className="max-w-[580px]">
                 <div className="mt-10 text-xl/[29.2px] text-carbon-800 gap-[29.2px] flex-col flex">
                     <p>Toda a infraestrutura técnica do site é hospedada em serviços de terceiros, como plataformas de deploy e hospedagem (por exemplo, Vercel), além do provedor de domínio Registro.br. Essas empresas podem tratar dados técnicos de navegação com finalidades de funcionamento, segurança e monitoramento de desempenho. Embora parceiros externos possam atuar no tratamento de dados, não compartilhamos informações pessoais identificáveis fora das hipóteses estritamente necessárias para o funcionamento do site ou mediante consentimento do usuário.</p>

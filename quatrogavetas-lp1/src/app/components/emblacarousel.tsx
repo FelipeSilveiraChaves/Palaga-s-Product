@@ -2,13 +2,20 @@
 
 import useEmblaCarousel from "embla-carousel-react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
-
+import { motion } from "motion/react";
 import { useEffect, useCallback } from "react";
 
 export default function EmblaCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
   });
+
+  const motionProps = {
+    whileHover: { scale: 1.02 },
+    whileTap: { scale: 0.96 },
+    transition: { type: "spring", stiffness: 520, damping: 32, mass: 0.6 },
+  } as const;
+
 
   const scrollNext = useCallback(() => {
     if (!emblaApi) return;
@@ -53,8 +60,9 @@ export default function EmblaCarousel() {
       </div>
 
       <div className="flex-1 flex justify-center gap-2 pt-4">
-        <button
+        <motion.button
           onClick={scrollPrev}
+          {...motionProps}
           className="
             w-12 h-12 rounded-full 
             bg-carbon-800 text-carbon-0 
@@ -62,10 +70,11 @@ export default function EmblaCarousel() {
           "
         >
           <FaChevronLeft className="w-5 h-5" />
-        </button>
+        </motion.button>
 
-        <button
+        <motion.button
           onClick={scrollNext}   
+          {...motionProps}
           className="
             w-12 h-12 rounded-full 
             bg-carbon-800 text-carbon-0 
@@ -73,7 +82,7 @@ export default function EmblaCarousel() {
           "
         >
           <FaChevronRight className="w-5 h-5" />
-        </button>
+        </motion.button>
       </div>
     </div>
   );
