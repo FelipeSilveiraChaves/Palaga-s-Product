@@ -66,10 +66,10 @@ export default function HamburgerButton() {
             : "opacity-0  pointer-events-none"
         }
         `}>
-          <Button href="products">Estojos</Button>
-          <Button href="">Cadernos</Button>
+          <Button href="">Estojos</Button>
+          <Button exeternalButton href="">Estojos</Button>
           <Button href="">Canetas</Button>
-          <Button href="">Cursos</Button>
+          <Button exeternalButton href="">Canetas</Button>
       </div>
     </div>
   );

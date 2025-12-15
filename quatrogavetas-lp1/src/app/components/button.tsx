@@ -23,8 +23,10 @@ export default function Button({
   className,
 }: ButtonProps) {
   const base =
-  "rounded-full text-[18px] leading-none px-[18px] pt-3 pb-[13px] inline-flex items-center justify-center " +
-  "cursor-pointer select-none transition-colors duration-150 ease-out";
+  "rounded-full text-[18px] h-[45px] px-[18px] " +
+  "inline-flex items-center justify-center leading-none " +
+  "cursor-pointer select-none transition-colors duration-150 ease-out"
+
 
 
   const variants = {
@@ -51,7 +53,7 @@ export default function Button({
         className={classes}
         {...motionProps}
       >
-        {children}
+        <span className="inline-block -translate-y-px">{children}</span>
       </motion.a>
     );
   }
