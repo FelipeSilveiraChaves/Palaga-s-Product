@@ -53,7 +53,7 @@ export default function Button({
         className={classes}
         {...motionProps}
       >
-        <span className="inline-block -translate-y-px">{children}</span>
+        {children}
       </motion.a>
     );
   }

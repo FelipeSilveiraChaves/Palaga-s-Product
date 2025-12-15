@@ -67,9 +67,9 @@ export default function HamburgerButton() {
         }
         `}>
           <Button href="">Estojos</Button>
-          <Button exeternalButton href="">Estojos</Button>
+          <Button href="">Cadernos</Button>
           <Button href="">Canetas</Button>
-          <Button exeternalButton href="">Canetas</Button>
+          <Button href="">Cursos</Button>
       </div>
     </div>
   );
