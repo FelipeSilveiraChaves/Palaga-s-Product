@@ -1,10 +1,9 @@
 'use client'
 
 import Link from "next/link";
-import Image from "next/image";
-import PalagaLogo from "../../../assets/logo-exemplo.svg"
 import { useEffect, useState } from "react";
 import HamburgerButton from "./hamburgerButton";
+import Logo from "./logo";
   
 
 export default function Navbar(){
@@ -28,7 +27,7 @@ export default function Navbar(){
             shadow-[inset_0_20px_20px_20px_rgba(255,255,255,0.9)]
         ">
                 <div className="w-full flex justify-between items-start">
-                    <Link href={`/${landingOrigin}`}><Image alt="Logo da Palaga" src={PalagaLogo}></Image></Link>
+                    <Link href={`/${landingOrigin}`}><Logo /></Link>
                     <HamburgerButton />
                 </div>
         </nav>
