@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import HamburgerButton from "./hamburgerButton";
 import Logo from "./logo";
+import LogoFake from '../../../assets/logo-exemplo.svg'
   
 
 export default function Navbar(){
@@ -27,7 +28,7 @@ export default function Navbar(){
             shadow-[inset_0_20px_20px_20px_rgba(255,255,255,0.9)]
         ">
                 <div className="w-full flex justify-between items-start">
-                    <Link href={`/${landingOrigin}`}><Logo /></Link>
+                    <Link href={`/${landingOrigin}`}><LogoFake /></Link>
                     <HamburgerButton />
                 </div>
         </nav>
