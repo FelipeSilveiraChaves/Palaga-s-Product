@@ -1,6 +1,7 @@
 import Image from "next/image";
 import LocalStorageLpRegister from "../components/localstoragelpregister";
 import { Gabarito } from 'next/font/google'
+import mockupNote from '../../../assets/images/cadernomockup2.png'
 
 const gabarito = Gabarito({
   subsets: ['latin'],
@@ -27,7 +28,7 @@ export default function LandingPageOne(){
           </p>    
         </div>
           <Image
-            src="/images/cadernomockup2.png"
+            src={mockupNote}
             alt="Caderno de planejamento"
             width={640}
             height={520}
