@@ -13,7 +13,7 @@ export default function LandingPageOne(){
     <>
       <LocalStorageLpRegister lpId={"lp-1"}/>
       <div className="h-full p-4 flex flex-col justify-center items-center w-full">
-        <div className=" w-lg ">
+        <div className=" max-w-lg ">
           <h1
             className={`${gabarito.className} text-[64px] text-[#202A40] tracking-[-1.28px] leading-16 font-semibold`}
           >
@@ -33,7 +33,7 @@ export default function LandingPageOne(){
             height={520}
             priority
           />
-          <div className="w-lg">
+          <div className="max-w-lg">
              <h1
             className={`${gabarito.className} pt-[90px] pb-16 text-[64px] text-[#202A40] tracking-[-1.28px] leading-16 font-semibold`}
           >
