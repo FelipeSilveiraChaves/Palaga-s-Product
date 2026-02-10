@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import HamburgerButton from "./hamburgerButton";
-import Logo from "./logo";
 import LogoFake from '../../../assets/logo-exemplo.svg'
   
 
