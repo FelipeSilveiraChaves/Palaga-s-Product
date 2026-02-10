@@ -9,8 +9,9 @@ const dinRounded = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "s",
-  description: "Organize",
+  title: "Palaga's palace",
+  description: "É mais facil do que parece",
+  
 };
 
 export default function RootLayout({
