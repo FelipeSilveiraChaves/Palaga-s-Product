@@ -26,6 +26,7 @@ export default function LandingPageOne() {
           </p>
         </div>
           <MainSearchComponent />
+          
         <div className="max-w-lg">
           <h1
             className={`${gabarito.className} pt-[90px] pb-16 text-[64px] text-[#202A40] tracking-[-1.28px] leading-16 font-semibold`}
