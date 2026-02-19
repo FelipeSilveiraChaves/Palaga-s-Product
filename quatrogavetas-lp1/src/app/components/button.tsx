@@ -13,7 +13,7 @@ type ButtonProps = {
   className?: string;
 };
 
-const MotionLink = motion(Link);
+const MotionLink = motion.create(Link);
 
 export default function Button({
   href,

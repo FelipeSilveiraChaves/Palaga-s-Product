@@ -3,6 +3,7 @@ import LocalStorageLpRegister from "../components/localstoragelpregister";
 import { Gabarito } from 'next/font/google'
 import mockupNote from '../../../assets/images/cadernomockup2.png'
 import MainSearchComponent from "./components/MainSearchComponent";
+import { DividerBadge } from "../components/dividerbadge";
 
 const gabarito = Gabarito({
   subsets: ['latin'],
@@ -15,21 +16,22 @@ export default function LandingPageOne() {
     <>
       <LocalStorageLpRegister lpId={"lp-1"} />
       <div className="h-full p-4 flex flex-col justify-center items-center w-full">
-        <div className=" max-w-lg ">
+        <div className=" max-w-[500px] ">
           <h1
             className={`${gabarito.className} text-[64px] text-[#202A40] tracking-[-1.28px] leading-16 font-semibold`}
           >
             Ser produtivo está muito complicado
           </h1>
-          <p className="text-[20px] text-carbon-600 tracking-normal leading-[30px] pt-[30px] pb-7">
+          <p className="text-[20px] text-carbon-600 tracking-normal leading-[30px] pt-[30px] pb-[60px]">
             Ok, maybe it wasn’t quite so quick and clean. But that’s basically how we decided to make the March Tee and became founders overnight.
           </p>
         </div>
-          <MainSearchComponent />
+        <MainSearchComponent />
           
+        <DividerBadge label="March"/>
         <div className="max-w-lg">
           <h1
-            className={`${gabarito.className} pt-[90px] pb-16 text-[64px] text-[#202A40] tracking-[-1.28px] leading-16 font-semibold`}
+            className={`${gabarito.className} pb-16 text-[64px] text-[#202A40] tracking-[-1.28px] leading-16 font-semibold`}
           >
             Vantagens
           </h1>

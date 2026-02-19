@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <motion.div
   className="
-    w-full fixed top-0 left-0 px-6 pt-4 z-50 bg-transparent
+    w-full fixed top-0 left-0 px-6 pt-7 z-50 bg-transparent
     will-change-transform
   "
   initial={{ y: 0 }}
@@ -55,14 +55,14 @@ export default function Navbar() {
 >
   <nav className="
     w-full max-w-[750px] h-14 rounded-full mx-auto flex items-center justify-between pr-[23px] pl-[33px]
-    bg-white/60 backdrop-blur-md
+    bg-white/78 backdrop-blur-md
     border border-[#E1E1E1]/70
     shadow-[0px_2px_10px_rgba(0,0,0,0.03),0px_4px_8px_rgba(0,0,0,0.05)]
     will-change-[backdrop-filter]
   ">
-        <div>
-          <FaInstagram color="#6f7481" size={26} />
-        </div>
+        <Link href={landingOrigin}>
+          <FaInstagram  color="#6f7481" size={26} />
+        </Link>
 
         <div className="flex items-center justify-center text-[#6f7481] gap-5">
           <p>Email</p>
