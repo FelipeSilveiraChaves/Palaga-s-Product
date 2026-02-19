@@ -5,12 +5,15 @@ import Marquee from "react-fast-marquee";
 
 export default function HorizontalMarquee() {
   return (
-    <div className="w-full overflow-hidden py-16 bg-white flex items-center justify-center">
+    <div className="w-full overflow-hidden bg-white flex items-center justify-center">
       <Marquee
         speed={40}           // velocidade constante
         gradient={false}
         pauseOnHover={false}
-        className="max-w-[1600px]"
+        className="max-w-[1600px] w-full 
+            overflow-hidden 
+            lg:mask-[linear-gradient(to_right,transparent,black_2.5%,black_98%,transparent)]
+            lg:[-webkit-mask-image:linear-gradient(to_right,transparent,black_2.5%,black_98%,transparent)]"
         direction="right"
       >
         <div className="w-[228px] h-[421px] bg-[#D9DEE6] mx-2 flex items-center justify-center">
