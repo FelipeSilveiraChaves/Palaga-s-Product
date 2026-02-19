@@ -22,14 +22,15 @@ export default function MainSearchComponent() {
 
 
     return (
-        <div className="gap-3  flex flex-col items-start ">
-            <div className="h-17 sm:w-[639px] w-full bg-white border border-[#DFDFDF] py-2.25 px-1.75 gap-1.75 rounded-[21px] flex items-center justify-between shadow-[0px_2px_10px_rgba(0,0,0,0.03),0px_4px_8px_rgba(0,0,0,0.05)]">
+    <div className="w-full flex flex-col items-center justify-center border border-amber-300">
+        <div className="gap-3 flex flex-col items-start w-full max-w-[639px] border">
+            <div className="h-17 w-full bg-white border border-[#DFDFDF] py-2.25 px-1.75 gap-1.75 rounded-[21px] flex items-center justify-between shadow-[0px_2px_10px_rgba(0,0,0,0.03),0px_4px_8px_rgba(0,0,0,0.05)]">
                 
                 <div className="h-[51px] w-[51px] flex items-center justify-center ">
                     <BiLeftArrowAlt size={30} color="#ABABAB" />
                 </div>
 
-                <div className="flex-1 h-[51px] flex items-center justify-between ml">
+                <div className="flex-1 h-[51px] flex items-center justify-between">
                     <div className="bg-[#EFEDED] rounded-full flex-1 p-1.75 flex items-center justify-between pr-[21px]">
 
                         <div className="bg-white h-9 w-9 rounded-full flex items-center justify-center mr-3">
@@ -41,8 +42,8 @@ export default function MainSearchComponent() {
                             />
                         </div>
 
-                        <h3 className={`${inter.className} text-[21px] leading-[30px] flex-1 ` }>
-                          TESTE TESTE 
+                        <h3 className={`${inter.className} text-[21px] leading-[30px] flex-1 overflow-hidden` }>
+                        TESTE TESTE 
                         </h3>
 
                         <div className=" h-[30px] w-[30px] flex items-center justify-center">
@@ -72,5 +73,6 @@ export default function MainSearchComponent() {
                 </div>
             </div>
         </div>
-    )
+    </div>
+)
 }
