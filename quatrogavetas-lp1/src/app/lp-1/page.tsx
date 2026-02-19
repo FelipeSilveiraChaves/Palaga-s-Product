@@ -2,7 +2,7 @@ import LocalStorageLpRegister from "../components/localstoragelpregister";
 import { Gabarito } from 'next/font/google'
 import MainSearchComponent from "./components/MainSearchComponent";
 import { DividerBadge } from "../components/dividerbadge";
-import EmblaCarousel from "../components/emblacarousel";
+import HorizontalMarquee from "../components/marqueecomponent";
 
 const gabarito = Gabarito({
   subsets: ['latin'],
@@ -41,7 +41,17 @@ export default function LandingPageOne() {
             We were clueless about fashion, manufacturing, even tees. All we knew was good design and telling a compelling story. <span className="bg-[#FFFF0060]">Turns out that’s </span>what was missing <span className="bg-[#FFFF0060]">from the experience</span>, along with an actually well-made tee. So we jumped <span className="bg-[#FFFF0060]">right into making things.</span>
           </p>
         </div>
-          <EmblaCarousel />
+          <HorizontalMarquee />
+          <div className="max-w-[500px] pt-[60px]">
+          <p className=" text-[20px] text-carbon-600 tracking-normal leading-[30px] pb-7">
+            Ok, maybe it wasn’t quite so quick and clean. But that’s basically how we decided to make the March Tee and became founders overnight.
+          </p>
+          <p className=" text-[20px] text-carbon-600 tracking-normal leading-[30px] pb-[60px]">
+            We were clueless about fashion, manufacturing, even tees. All we knew was good design and telling a compelling story. <span className="bg-[#FFFF0060]">Turns out that’s </span>what was missing <span className="bg-[#FFFF0060]">from the experience</span>, along with an actually well-made tee. So we jumped <span className="bg-[#FFFF0060]">right into making things.</span>
+          </p>
+        </div>
+        <DividerBadge label="March"/>
+
       </div>
 
     </>
