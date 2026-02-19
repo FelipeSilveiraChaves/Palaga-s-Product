@@ -9,10 +9,9 @@ export default function HorizontalMarquee() {
       <Marquee
         speed={40}           // velocidade constante
         gradient={false}
-            // sem fade nas bordas
         pauseOnHover={false}
         className="max-w-[1600px]"
-        direction="left"
+        direction="right"
       >
         <div className="w-[228px] h-[421px] bg-[#D9DEE6] mx-2 flex items-center justify-center">
           GIF 1
