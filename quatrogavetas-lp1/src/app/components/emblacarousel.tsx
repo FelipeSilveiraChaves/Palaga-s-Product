@@ -34,7 +34,7 @@ export default function EmblaCarousel() {
   }, [emblaApi]);
 
   return (
-    <div className="w-screen mt-10">
+    <div className="w-screen">
       <div className="overflow-hidden" ref={emblaRef}>
         {/* container com margem negativa */}
         <div className="flex -ml-6">
