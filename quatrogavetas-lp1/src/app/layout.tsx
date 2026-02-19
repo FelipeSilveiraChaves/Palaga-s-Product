@@ -25,7 +25,7 @@ export default function RootLayout({
         className={`${dinRounded.className} antialiased min-h-screen flex flex-col bg-carbon-0`}
       >
         <Navbar />
-          <main className="flex-1 flex">
+          <main className="flex-1 flex pt-20">
             {children}
           </main>
         <Footer />
