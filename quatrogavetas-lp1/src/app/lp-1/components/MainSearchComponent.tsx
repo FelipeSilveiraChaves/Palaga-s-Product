@@ -11,12 +11,12 @@ const inter = Inter({
 export default function MainSearchComponent() {
 
     const ExamplesVariables = {
-        BaseModel:  "rounded-full text-[21px] h-[45px] px-[18px] inline-flex items-center justify-center leading-none" +
+        BaseModel:  "rounded-full text-[21px] h-[45px] px-[18px] inline-flex items-center justify-center leading-none " +
                     "bg-white text-[#1F1F1F] border-[0,5px] border-[#E5E5E5] " +
-                    "shadow-[0px_4px_8px_rgba(0,0,0,0.05),0px_0px_0px_1.16px_rgba(0,0,0,0.065)]",
+                    "shadow-[0px_4px_8px_rgba(0,0,0,0.05),0px_0px_0px_1.16px_rgba(0,0,0,0.065)] ",
         RedModel:   "rounded-full text-[21px] h-[45px] px-[18px] inline-flex items-center justify-center leading-none " +
                     "bg-[#FFE4E4] border-[0,5px] border-[#FDEFEE] text-[#1F1F1F] " +
-                    "shadow-[0px_4px_8px_rgba(255,123,123,0.05),0px_0px_0px_1.16px_rgba(226,23,0,0.065)]",
+                    "shadow-[0px_4px_8px_rgba(255,123,123,0.05),0px_0px_0px_1.16px_rgba(226,23,0,0.065)] ",
     }
    
 
@@ -42,7 +42,7 @@ export default function MainSearchComponent() {
                         </div>
 
                         <h3 className={`${inter.className} text-[21px] leading-[30px] flex-1 ` }>
-                            Para ser produtivo, eu preciso de...
+                          TESTE TESTE 
                         </h3>
 
                         <div className=" h-[30px] w-[30px] flex items-center justify-center">
