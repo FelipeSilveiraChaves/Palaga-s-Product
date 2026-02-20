@@ -2,15 +2,31 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+@theme {
+  --font-gabarito: var(--font-gabarito);
+  --font-hanken: var(--font-hanken);
+}
+
+@layer utilities {
+  .font-title {
+    font-family: var(--font-gabarito);
+  }
+}
+
+@layer utilities {
+  .font-base {
+    font-family: var(--font-hanken);
+  }
+}
 
 @theme {
-  --color-carbon-0: #FFFFFF;
-  --color-carbon-50: #F7F7F7;
-  --color-carbon-200: #D9D9D9;
-  --color-carbon-400: #AEAEAE;
+  --color-carbon-0: #ffffff;
+  --color-carbon-50: #f7f7f7;
+  --color-carbon-200: #d9d9d9;
+  --color-carbon-400: #aeaeae;
   --color-carbon-600: #777777;
-  --color-carbon-800: #4B4B4B;
-  
+  --color-carbon-800: #4b4b4b;
+
   --tracking-toosml: -2%;
 }
 
@@ -52,8 +68,6 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-
-  ;
 }
 
 @utility tracking-toosml {
@@ -94,7 +108,6 @@
   --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.213 47.604);
-
 }
 
 .dark {
@@ -130,8 +143,6 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.646 0.222 41.116);
 }
-
-
 
 @layer base {
   * {

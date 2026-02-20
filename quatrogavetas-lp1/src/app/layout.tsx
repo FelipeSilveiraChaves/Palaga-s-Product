@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import localFont from 'next/font/local'
+import { gabarito, hanken } from "@/lib/fonts";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
-const dinRounded = localFont({
-  src: '../../public/font.woff2',
-})
-
 export const metadata: Metadata = {
   title: "Palaga's palace",
   description: "É mais facil do que parece",
-  
 };
 
 export default function RootLayout({
@@ -22,12 +17,10 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${dinRounded.className} antialiased min-h-screen flex flex-col bg-carbon-0`}
+        className={`${gabarito.variable} ${hanken.variable} font-base bg-carbon-0 flex min-h-screen flex-col font-(--font-hanken) antialiased`}
       >
         <Navbar />
-          <main className="flex-1 flex pt-36">
-            {children}
-          </main>
+        <main className="flex flex-1 pt-36">{children}</main>
         <Footer />
       </body>
     </html>
