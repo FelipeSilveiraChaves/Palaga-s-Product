@@ -5,6 +5,7 @@
 @theme {
   --font-gabarito: var(--font-gabarito);
   --font-hanken: var(--font-hanken);
+  --font-jua: var(--font-jua);
 }
 
 @layer utilities {
@@ -16,6 +17,12 @@
 @layer utilities {
   .font-base {
     font-family: var(--font-hanken);
+  }
+}
+
+@layer utilities {
+  .font-third {
+    font-family: var(--font-jua);
   }
 }
 

@@ -1,4 +1,4 @@
-import { Gabarito, Hanken_Grotesk } from "next/font/google";
+import { Gabarito, Hanken_Grotesk, Jua } from "next/font/google";
 
 export const gabarito = Gabarito({
   subsets: ["latin"],
@@ -12,4 +12,11 @@ export const hanken = Hanken_Grotesk({
   weight: ["400", "500", "600"],
   display: "swap",
   variable: "--font-hanken",
+});
+
+export const jua = Jua({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-jua",
 });
