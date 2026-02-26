@@ -7,6 +7,8 @@ import Hero from "./components/hero";
 import TextWrapper from "./components/textwrapper";
 import { Title } from "./components/title";
 import LessonsTitle from "./components/lessonstitle";
+import LessonBlock from "./components/lessonblock";
+import CallToAction from "../components/calltoaction";
 
 export default function LandingPageOne() {
   // padding ta 45 no total, px-4 no main container para o video, e px-7.25 nos textos. assim ficando 16px para os videos e 29px+16px = 45px para os textos
@@ -17,7 +19,7 @@ export default function LandingPageOne() {
         <Hero />
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
         <TextWrapper>
-          <DashedDivider />
+          <DashedDivider className="mt-15 mb-15" />
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
@@ -48,7 +50,7 @@ export default function LandingPageOne() {
           </BaseContent>
         </TextWrapper>
         <TextWrapper className="max-w-125 px-7.25">
-          <DashedDivider textBelow />
+          <DashedDivider className="mt-15 mb-21" />
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
@@ -63,81 +65,48 @@ export default function LandingPageOne() {
           </BaseContent>
         </TextWrapper>
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-        <TextWrapper>
-          <div className="mt-6.25 px-2">
-            {/* px-2 aumenta em 8 os 45px de paddings ja somados anteriormente ficando 53px */}
-            <LessonsTitle
-              LessonName={"Bloco de notas"}
-              WhichLesson={"Aula 1"}
-            />
-            <BaseContent className="pt-5 pb-18">
-              Não tínhamos a mínima ideia de moda, produção, nem mesmo de
-              camisetas. Tudo o que sabíamos era sobre bom.
-            </BaseContent>
-          </div>
-        </TextWrapper>
-        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-        <TextWrapper>
-          <div className="mt-6.25 px-2">
-            {/* px-2 aumenta em 8 os 45px de paddings ja somados anteriormente ficando 53px */}
-            <LessonsTitle LessonName={"Agenda"} WhichLesson={"Aula 2"} />
-            <BaseContent className="pt-5 pb-18">
-              Não tínhamos a mínima ideia de moda, produção, nem mesmo de
-              camisetas. Tudo o que sabíamos era sobre bom.
-            </BaseContent>
-          </div>
-        </TextWrapper>
-        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-        <TextWrapper>
-          <div className="mt-6.25 px-2">
-            {/* px-2 aumenta em 8 os 45px de paddings ja somados anteriormente ficando 53px */}
-            <LessonsTitle
-              LessonName={"Lista de tarefas"}
-              WhichLesson={"Aula 3"}
-            />
-            <BaseContent className="pt-5 pb-18">
-              Não tínhamos a mínima ideia de moda, produção, nem mesmo de
-              camisetas. Tudo o que sabíamos era sobre bom.
-            </BaseContent>
-          </div>
-        </TextWrapper>
-        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-        <TextWrapper>
-          <div className="mt-6.25 px-2">
-            {/* px-2 aumenta em 8 os 45px de paddings ja somados anteriormente ficando 53px */}
-            <LessonsTitle LessonName={"Ritual Diário"} WhichLesson={"Aula 4"} />
-            <BaseContent className="pt-5 pb-18">
-              Não tínhamos a mínima ideia de moda, produção, nem mesmo de
-              camisetas. Tudo o que sabíamos era sobre bom.
-            </BaseContent>
-          </div>
-        </TextWrapper>
-        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-        <TextWrapper>
-          <div className="mt-6.25 px-2">
-            {/* px-2 aumenta em 8 os 45px de paddings ja somados anteriormente ficando 53px */}
-            <LessonsTitle
-              LessonName={"Ritual Semanal"}
-              WhichLesson={"Aula 5"}
-            />
-            <BaseContent className="pt-5 pb-18">
-              Não tínhamos a mínima ideia de moda, produção, nem mesmo de
-              camisetas. Tudo o que sabíamos era sobre bom.
-            </BaseContent>
-          </div>
-        </TextWrapper>
-        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-        <TextWrapper>
-          <div className="mt-6.25 px-2">
-            {/* px-2 aumenta em 8 os 45px de paddings ja somados anteriormente ficando 53px */}
-            <LessonsTitle LessonName={"Ritual Mensal"} WhichLesson={"Aula 6"} />
-            <BaseContent className="pt-5 pb-18">
-              Não tínhamos a mínima ideia de moda, produção, nem mesmo de
-              camisetas. Tudo o que sabíamos era sobre bom.
-            </BaseContent>
-          </div>
+        <LessonBlock
+          lessonName="Bloco de notas"
+          whichLesson="Aula 1"
+          description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+        />
 
-          <DashedDivider textBelow />
+        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+        <LessonBlock
+          lessonName="Agenda"
+          whichLesson="Aula 2"
+          description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+        />
+
+        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+        <LessonBlock
+          lessonName="Lista de tarefas"
+          whichLesson="Aula 3"
+          description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+        />
+
+        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+        <LessonBlock
+          lessonName="Ritual Diário"
+          whichLesson="Aula 4"
+          description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+        />
+
+        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+        <LessonBlock
+          lessonName="Ritual Semanal"
+          whichLesson="Aula 5"
+          description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+        />
+
+        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+        <LessonBlock
+          lessonName="Ritual Mensal"
+          whichLesson="Aula 6"
+          description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+        />
+        <TextWrapper>
+          <DashedDivider className="mt-15 mb-21" />
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
@@ -153,7 +122,7 @@ export default function LandingPageOne() {
         </TextWrapper>
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
         <TextWrapper>
-          <DashedDivider />
+          <DashedDivider className="mt-15 mb-15" />
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
@@ -169,7 +138,7 @@ export default function LandingPageOne() {
         </TextWrapper>
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
         <TextWrapper>
-          <DashedDivider />
+          <DashedDivider className="mt-15 mb-15" />
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
@@ -185,7 +154,7 @@ export default function LandingPageOne() {
         </TextWrapper>
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
         <TextWrapper>
-          <DashedDivider />
+          <DashedDivider className="mt-15 mb-15" />
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
@@ -199,6 +168,7 @@ export default function LandingPageOne() {
             mesmo de camisetas. Tudo o que sabíamos.
           </BaseContent>
         </TextWrapper>
+        <CallToAction />
       </div>
     </>
   );

@@ -7,6 +7,10 @@
   --font-hanken: var(--font-hanken);
   --font-jua: var(--font-jua);
 }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 @layer utilities {
   .font-title {
