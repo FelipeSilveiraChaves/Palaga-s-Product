@@ -9,6 +9,7 @@ import { Title } from "./components/title";
 import LessonsTitle from "./components/lessonstitle";
 import LessonBlock from "./components/lessonblock";
 import CallToAction from "../components/calltoaction";
+import FAQCard from "../components/FAQ";
 
 export default function LandingPageOne() {
   // padding ta 45 no total, px-4 no main container para o video, e px-7.25 nos textos. assim ficando 16px para os videos e 29px+16px = 45px para os textos
@@ -49,7 +50,7 @@ export default function LandingPageOne() {
             mesmo de camisetas. Tudo o que sabíamos era sobre bom.
           </BaseContent>
         </TextWrapper>
-        <TextWrapper className="max-w-125 px-7.25">
+        <TextWrapper>
           <DashedDivider className="mt-15 mb-21" />
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
@@ -169,6 +170,62 @@ export default function LandingPageOne() {
           </BaseContent>
         </TextWrapper>
         <CallToAction />
+        <TextWrapper>
+          <DashedDivider className="mt-15 mb-15" />
+          <Title
+            className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
+          >
+            Outras{" "}
+            <span>
+              <Badge label="Perguntas" />
+            </span>
+          </Title>
+          <BaseContent className="pt-7.5 pb-7">
+            Acontece que era isso que faltava na experiência, produção, nem
+            mesmo de camisetas. Tudo o que sabíamos.
+          </BaseContent>
+        </TextWrapper>
+        <FAQCard
+          Question={"O curso é para iniciantes?"}
+          Answer={
+            "O curso foi pensado para ambos os perfis. Se você está começando, vai aprender a fazer certo desde o início. Se já tem experiência, vai organizar o conhecimento e descobrir pontos cegos que podem estar custando dinheiro."
+          }
+          className={"mb-7.5"}
+        />
+        <FAQCard
+          Question={"As aulas são demoradas?"}
+          Answer={
+            "O curso completo tem apenas 60 minutos, dividido em 6 aulas de 10 minutos cada. Você pode assistir tudo de uma vez ou ir aula por aula, no seu ritmo."
+          }
+          className={"mb-7.5"}
+        />
+        <FAQCard
+          Question={"Quanto tempo de acesso?"}
+          Answer={
+            "O acesso é vitalício. Uma vez que você comprar, o curso é seu para sempre. Isso inclui todas as atualizações futuras que fizermos no conteúdo."
+          }
+          className={"mb-7.5"}
+        />
+        <FAQCard
+          Question={"E se eu não gostar do curso?"}
+          Answer={
+            "Você tem 7 dias de garantia incondicional. Se por qualquer motivo achar que o curso não valeu a pena, basta pedir o reembolso e devolvemos 100% do seu investimento. Sem perguntas, sem burocracia."
+          }
+          className={"mb-7.5"}
+        />
+        <FAQCard
+          Question={"Quais são os materiais extra?"}
+          Answer={
+            "Sim! Você recebe planilhas práticas para calcular os principais indicadores financeiros do seu negócio. São ferramentas que você pode usar imediatamente após assistir as aulas."
+          }
+          className={"mb-7.5"}
+        />
+        <FAQCard
+          Question={"Posso assistir pelo celular?"}
+          Answer={
+            "Sim! A plataforma é 100% responsiva e você pode assistir as aulas em qualquer dispositivo: computador, tablet ou celular."
+          }
+        />
       </div>
     </>
   );

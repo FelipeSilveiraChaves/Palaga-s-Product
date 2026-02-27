@@ -7,7 +7,7 @@ export default function CallToAction() {
   return (
     <div className="font-title relative flex w-full max-w-95.5 flex-col items-center justify-center rounded-b-4xl bg-[linear-gradient(to_bottom,#FFFFFF_5%,#0D99FF_25%,#202A40_80%)] pb-8">
       {/* MARQUEE “DENTRO” DO CTA, MAS IGNORANDO A LARGURA DELE */}
-      <div className="absolute top-0 left-1/2 z-20 w-103.5 -translate-x-1/2">
+      <div className="absolute top-0 left-1/2 z-20 w-screen max-w-100.5 -translate-x-1/2">
         <HorizontalMarquee className="bg-transparent" />
       </div>
       <div className="h-56.5" />
@@ -63,7 +63,7 @@ export default function CallToAction() {
         </div>
         <DashedDivider stroke="#E0E5EE15" className="my-1" />
         <div className="flex h-6 items-center justify-center">
-          <p className="text-[18px] leading-6 tracking-normal text-[#F5F7FA]">
+          <p className="text-[18px] leading-6 tracking-normal text-[#F5F7FA] sm:text-xs">
             Acesso vitalício às atualizações
           </p>
         </div>
