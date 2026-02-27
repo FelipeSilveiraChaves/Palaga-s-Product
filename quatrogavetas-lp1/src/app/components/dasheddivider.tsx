@@ -8,7 +8,7 @@ export function DashedDivider({
   stroke = "#E0E5EE", // valor padrão
 }: DashedDividerProps) {
   return (
-    <div className={`w-full ${className}`}>
+    <div className={`w-full ${className} max-w-125 px-7.25 md:max-w-screen`}>
       <svg width="100%" height="6">
         <line
           x1="0"
