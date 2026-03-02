@@ -10,6 +10,7 @@ export default function CallToAction() {
       <div className="absolute top-0 left-1/2 z-20 w-screen max-w-100.5 -translate-x-1/2">
         <HorizontalMarquee className="bg-transparent" />
       </div>
+
       <div className="h-56.5" />
       <div className="mt-4 mb-4 inline-flex h-9 cursor-pointer items-center justify-center rounded-full bg-[#202A40] px-4 text-[18px] leading-6 text-[#FFFFFF]">
         Pagamento Único

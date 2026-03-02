@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function BuyButton() {
   const href = process.env.NEXT_PUBLIC_CHECKOUT_URL || "#";
@@ -13,9 +14,11 @@ export default function BuyButton() {
       whileHover={{ y: 1 }}
       whileTap={{ y: 4 }}
       transition={{ type: "spring", stiffness: 200, damping: 10 }}
-      className="flex h-14 w-full items-center justify-center rounded-[12px] bg-[#0D99FF] text-[24px] leading-6 font-extrabold tracking-normal text-[#F5F7FA]"
+      className="relative flex h-14 w-full items-center justify-center overflow-hidden rounded-[12px] bg-[#0D99FF]"
     >
-      COMPRAR
+      <span className="text-[24px] leading-6 font-extrabold text-[#F5F7FA]">
+        COMPRAR
+      </span>
     </motion.a>
   );
 }

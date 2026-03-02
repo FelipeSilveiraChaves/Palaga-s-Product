@@ -1,4 +1,5 @@
-import { Gabarito, Hanken_Grotesk, Jua } from "next/font/google";
+import { Gabarito, Hanken_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 
 export const gabarito = Gabarito({
   subsets: ["latin"],
@@ -14,9 +15,20 @@ export const hanken = Hanken_Grotesk({
   variable: "--font-hanken",
 });
 
-export const jua = Jua({
-  subsets: ["latin"],
-  weight: ["400"],
+// ✅ Palmer local
+export const palmer = localFont({
+  src: [
+    {
+      path: "../../public/fonts/palmer/font.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/palmer/font.woff",
+      weight: "400",
+      style: "normal",
+    },
+  ],
   display: "swap",
-  variable: "--font-jua",
+  variable: "--font-palmer",
 });
