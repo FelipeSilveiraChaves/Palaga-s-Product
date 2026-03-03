@@ -117,6 +117,7 @@ export default function LandingPageOne() {
 
         <ReactCompareSlider
           className="aspect-video w-full max-w-187.5 overflow-hidden rounded-2xl"
+          position={35} // começa em 35% (mais pra esquerda)
           itemOne={<Image src={AgendaLotada} alt="Imagem de Agenda lotada" />}
           itemTwo={
             <Image
@@ -221,14 +222,18 @@ export default function LandingPageOne() {
             mesmo de camisetas. Tudo o que sabíamos.
           </BaseContent>
         </TextWrapper>
+
         <CallToAction />
+
         <DashedDivider className="mt-15 mb-15" />
+
         <TextWrapper>
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
             Outras <Badge label="Dúvidas" />
           </Title>
+
           <BaseContent className="pt-7.5 pb-7">
             Acontece que era isso que faltava na experiência, produção, nem
             mesmo de camisetas. Tudo o que sabíamos.
