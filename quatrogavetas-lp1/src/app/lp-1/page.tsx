@@ -2,14 +2,19 @@ import { Badge } from "../components/badge";
 import { DashedDivider } from "../components/dasheddivider";
 import LocalStorageLpRegister from "../components/localstoragelpregister";
 import BaseContent from "./components/paragraph";
-import HorizontalMarquee from "../components/marqueecomponent";
-import Hero from "./components/hero";
 import TextWrapper from "./components/textwrapper";
 import { Title } from "./components/title";
-import LessonsTitle from "./components/lessonstitle";
+import AgendaLotada from "../../../assets/images/agendalotada.png";
+import AgendaOrganizada from "../../../assets/images/agendaorganizada.png";
 import LessonBlock from "./components/lessonblock";
 import CallToAction from "../components/calltoaction";
 import FAQCard from "../components/FAQ";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderHandle,
+} from "react-compare-slider";
+import Image from "next/image";
+import { MoveHorizontal } from "lucide-react";
 
 export default function LandingPageOne() {
   // padding ta 45 no total, px-4 no main container para o video, e px-7.25 nos textos. assim ficando 16px para os videos e 29px+16px = 45px para os textos
@@ -56,21 +61,17 @@ export default function LandingPageOne() {
             Ser <Badge label="Produtivo" /> está muito complicado
           </Title>
         </TextWrapper>
-
         <div className="aspect-video w-full max-w-225 rounded-2xl bg-[#F5F7FA]" />
-
         <TextWrapper>
           <BaseContent className="pt-7">
             Acontece que era isso que faltava na experiência, produção, nem
             mesmo de camisetas. Tudo o que sabíamos era sobre bom.
           </BaseContent>
         </TextWrapper>
-
         <DashedDivider className="mt-15 mb-21" />
-
         <TextWrapper>
           <Title>
-            Então, <br /> resolvemos <Badge label="Pesquisar" />
+            Então, <br /> resolvemos <Badge label="Simplificar" />
           </Title>
 
           <BaseContent className="pt-7.5 pb-7">
@@ -84,9 +85,7 @@ export default function LandingPageOne() {
             experiência.
           </BaseContent>
         </TextWrapper>
-
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-
         <TextWrapper>
           <BaseContent className="py-7">
             Não tínhamos a mínima ideia de moda, produção, nem mesmo de
@@ -98,12 +97,10 @@ export default function LandingPageOne() {
             mesmo de camisetas. Tudo o que sabíamos era sobre bom.
           </BaseContent>
         </TextWrapper>
-
         <DashedDivider className="mt-15 mb-21" />
-
         <TextWrapper>
           <Title>
-            Empacotamos isso em <Badge label="6 Aulas" />
+            Juntamos isso em <Badge label="6 Aulas" />
           </Title>
 
           <BaseContent className="pt-7.5 pb-7">
@@ -111,7 +108,6 @@ export default function LandingPageOne() {
             mesmo de camisetas. Tudo o que sabíamos era sobre bom.
           </BaseContent>
         </TextWrapper>
-
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
         <LessonBlock
           lessonName="Bloco de notas"
@@ -119,46 +115,63 @@ export default function LandingPageOne() {
           description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
         />
 
-        <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+        <ReactCompareSlider
+          className="aspect-video w-full max-w-187.5 overflow-hidden rounded-2xl"
+          itemOne={<Image src={AgendaLotada} alt="Imagem de Agenda lotada" />}
+          itemTwo={
+            <Image
+              src={AgendaOrganizada}
+              alt="Imagem de Agenda Organizada pelo método"
+            />
+          }
+          handle={
+            <div className="relative h-full">
+              {/* linha do meio */}
+              <div className="absolute top-0 left-1/2 h-full w-1.5 -translate-x-1/2 bg-[#202A40]" />
+
+              {/* botão */}
+              <div className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
+                <div className="flex h-26 w-7.5 items-center justify-center rounded-full bg-[#0D99FF] shadow-md">
+                  {/* ÍCONE (troca aqui) */}
+                  <MoveHorizontal className="h-4 w-4 text-white" />
+                </div>
+              </div>
+            </div>
+          }
+        />
         <LessonBlock
           lessonName="Agenda"
           whichLesson="Aula 2"
           description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
         />
-
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
         <LessonBlock
           lessonName="Lista de tarefas"
           whichLesson="Aula 3"
           description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
         />
-
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
         <LessonBlock
           lessonName="Ritual Diário"
           whichLesson="Aula 4"
           description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
         />
-
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
         <LessonBlock
           lessonName="Ritual Semanal"
           whichLesson="Aula 5"
           description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
         />
-
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
         <LessonBlock
           lessonName="Ritual Mensal"
           whichLesson="Aula 6"
           description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
         />
-
         <DashedDivider className="mt-15 mb-21" />
-
         <TextWrapper>
           <Title>
-            Colocamos, <br /> materiais <Badge label="Extras" />
+            Criamos, diversos <br /> <Badge label="Estudos" /> de caso
           </Title>
 
           <BaseContent className="pt-7.5 pb-7">
@@ -166,16 +179,13 @@ export default function LandingPageOne() {
             mesmo de camisetas. Tudo o que sabíamos.
           </BaseContent>
         </TextWrapper>
-
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-
         <DashedDivider className="mt-15 mb-15" />
-
         <TextWrapper>
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
-            Treinamos uma equipe, <Badge label="Braba" />
+            Treinamos uma <Badge label="Equipe" /> suporte
           </Title>
 
           <BaseContent className="pt-7.5 pb-7">
@@ -183,16 +193,13 @@ export default function LandingPageOne() {
             mesmo de camisetas. Tudo o que sabíamos.
           </BaseContent>
         </TextWrapper>
-
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-
         <DashedDivider className="mt-15 mb-15" />
-
         <TextWrapper>
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
-            Incluímos uma ótima <Badge label="Oferta" />
+            Incluímos uma <Badge label="Garantia" />
           </Title>
 
           <BaseContent className="pt-7.5 pb-7">
@@ -200,40 +207,33 @@ export default function LandingPageOne() {
             mesmo de camisetas. Tudo o que sabíamos.
           </BaseContent>
         </TextWrapper>
-
         <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-
         <DashedDivider className="mt-15 mb-15" />
-
         <TextWrapper>
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
-            E o apelidamos de <Badge label="Palaga" />
+            E oferecemos a <br /> um <Badge label="Valor" /> justo
           </Title>
 
-          <BaseContent className="pt-7.5 pb-7">
+          <BaseContent className="pt-7.5 pb-7.5">
             Acontece que era isso que faltava na experiência, produção, nem
             mesmo de camisetas. Tudo o que sabíamos.
           </BaseContent>
         </TextWrapper>
-
         <CallToAction />
-
         <DashedDivider className="mt-15 mb-15" />
-
         <TextWrapper>
           <Title
             className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
           >
-            Outras <Badge label="Perguntas" />
+            Outras <Badge label="Dúvidas" />
           </Title>
           <BaseContent className="pt-7.5 pb-7">
             Acontece que era isso que faltava na experiência, produção, nem
             mesmo de camisetas. Tudo o que sabíamos.
           </BaseContent>
         </TextWrapper>
-
         {faqs.map((faq, index) => (
           <FAQCard
             key={index}
