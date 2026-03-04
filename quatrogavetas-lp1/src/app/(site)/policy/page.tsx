@@ -1,7 +1,7 @@
 export default function privacyPolicy() {
   return (
-    <div className="flex w-full flex-col items-center justify-center px-6">
-      <div className="max-w-[580px]">
+    <div className="flex w-full flex-col items-center justify-center bg-[#F8FCFF] px-6">
+      <div className="max-w-145">
         <h1 className="text-carbon-800 pb-2 text-[40px] leading-none tracking-[-0.4px] sm:text-5xl">
           Políticas de privacidade
         </h1>
@@ -59,7 +59,7 @@ export default function privacyPolicy() {
         </div>
       </div>
 
-      <div className="max-w-[580px]">
+      <div className="max-w-145">
         <div className="text-carbon-800 mt-10 flex flex-col gap-[29.2px] text-xl/[29.2px]">
           <p>
             Toda a infraestrutura técnica do site é hospedada em serviços de

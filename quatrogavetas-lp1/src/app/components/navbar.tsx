@@ -40,7 +40,7 @@ export default function Navbar() {
   });
 
   return (
-    <motion.div
+    <motion.nav
       className="fixed top-0 left-0 z-50 w-full bg-transparent px-6 pt-7 will-change-transform"
       initial={{ y: 0 }}
       animate={visible ? { y: 0 } : { y: -90 }}
@@ -60,6 +60,6 @@ export default function Navbar() {
           <FaInstagram color="#6f7481" size={26} />
         </div>
       </nav>
-    </motion.div>
+    </motion.nav>
   );
 }

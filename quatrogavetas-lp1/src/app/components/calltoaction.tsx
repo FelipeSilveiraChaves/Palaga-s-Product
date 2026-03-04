@@ -1,16 +1,12 @@
-import Image from "next/image";
-
 import { DashedDivider } from "./dasheddivider";
+import ParcelasComponent from "./parcelas";
 import BuyButton from "./purchasebutton";
-import HorizontalMarquee from "./marqueecomponent";
 
 export default function CallToAction() {
   return (
     <div className="font-title flex w-full max-w-95.5 flex-col items-center justify-center rounded-b-4xl bg-transparent">
       <div className="aspect-video h-56.5 rounded-2xl bg-[#F5F7FA]" />
-      <div className="-mt-4.5 mb-4 inline-flex h-9 cursor-pointer items-center justify-center rounded-full bg-[#202A40] px-4 text-[18px] leading-6 text-[#FFFFFF]">
-        Por 12x de:
-      </div>
+      <ParcelasComponent />
 
       <div className="flex h-36 items-center justify-center">
         <div className="-mr-2 mb-2 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
