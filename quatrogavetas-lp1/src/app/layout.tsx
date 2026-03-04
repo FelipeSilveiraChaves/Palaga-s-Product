@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${gabarito.variable} ${hanken.variable} ${palmer.variable} font-base bg-carbon-0 flex min-h-screen flex-col font-(--font-hanken) antialiased`}
+        className={`${gabarito.variable} ${hanken.variable} ${palmer.variable} font-base flex min-h-screen flex-col bg-[#F8FCFF] font-(--font-hanken) antialiased`}
       >
         <Navbar />
         <main className="flex flex-1 pt-31.5">{children}</main>

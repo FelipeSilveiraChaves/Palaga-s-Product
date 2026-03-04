@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 
 import { DashedDivider } from "./dasheddivider";
@@ -8,31 +6,23 @@ import HorizontalMarquee from "./marqueecomponent";
 
 export default function CallToAction() {
   return (
-    <div className="font-title relative flex w-full max-w-95.5 flex-col items-center justify-center rounded-b-4xl bg-[linear-gradient(to_bottom,#FFFFFF_5%,#0D99FF_25%,#202A40_80%)] pb-8">
-      {/* MARQUEE “DENTRO” DO CTA, MAS IGNORANDO A LARGURA DELE */}
-      <div className="absolute top-0 left-1/2 z-20 w-screen max-w-100.5 -translate-x-1/2">
-        <HorizontalMarquee className="bg-transparent" />
-      </div>
-
-      <div className="h-56.5" />
-      <div className="mt-4 mb-4 inline-flex h-9 cursor-pointer items-center justify-center rounded-full bg-[#202A40] px-4 text-[18px] leading-6 text-[#FFFFFF]">
-        Pagamento Único
+    <div className="font-title flex w-full max-w-95.5 flex-col items-center justify-center rounded-b-4xl bg-transparent">
+      <div className="aspect-video h-56.5 rounded-2xl bg-[#F5F7FA]" />
+      <div className="-mt-4.5 mb-4 inline-flex h-9 cursor-pointer items-center justify-center rounded-full bg-[#202A40] px-4 text-[18px] leading-6 text-[#FFFFFF]">
+        Por 12x de:
       </div>
 
       <div className="flex h-36 items-center justify-center">
-        <div className="mb-2 flex items-center justify-center text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
-          <span>12</span>
-          <span className="-mr-2.25 flex items-center justify-center pl-1.5 text-3xl">
-            x
-          </span>
+        <div className="-mr-2 mb-2 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
+          <span>R$</span>
         </div>
 
         <span className="text-[200px] font-semibold text-[#F5F7FA] antialiased [text-rendering:optimizeLegibility]">
           8
         </span>
 
-        <span className="mb-2 -ml-2 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
-          R$
+        <span className="mb-12 -ml-2 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
+          ,08
         </span>
       </div>
 
@@ -77,12 +67,12 @@ export default function CallToAction() {
         <p className="text-[13px] leading-4.5 tracking-normal text-[#F5F7FA]">
           Checkout Seguro
         </p>
-        <Image
+        <img
           className="ml-1.25"
-          src="/hubla.svg"
+          src="/hubla2.svg"
           alt="Hubla"
-          width={36}
-          height={15}
+          width={38}
+          height={16}
         />
       </div>
 

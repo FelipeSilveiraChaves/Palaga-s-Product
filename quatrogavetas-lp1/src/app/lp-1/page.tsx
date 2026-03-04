@@ -58,7 +58,7 @@ export default function LandingPageOne() {
       <div className="flex h-full w-full flex-col items-center justify-center px-4">
         <TextWrapper>
           <Title className="mb-7.5">
-            Ser <Badge label="Produtivo" /> está muito complicado
+            Ser <Badge label="Produtivo" /> anda muito complicado
           </Title>
         </TextWrapper>
         <div className="aspect-video w-full max-w-225 rounded-2xl bg-[#F5F7FA]" />
@@ -71,7 +71,7 @@ export default function LandingPageOne() {
         <DashedDivider className="mt-15 mb-21" />
         <TextWrapper>
           <Title>
-            Então, <br /> resolvemos <Badge label="Simplificar" />
+            Então, <br /> pensamos em <Badge label="Simplificar" />
           </Title>
 
           <BaseContent className="pt-7.5 pb-7">
@@ -223,30 +223,22 @@ export default function LandingPageOne() {
           </BaseContent>
         </TextWrapper>
 
-        <CallToAction />
+        <div className="flex h-full w-screen items-center justify-center bg-[linear-gradient(to_bottom,#F8FCFF_5%,#0D99FF_25%,#0F192F_80%)]">
+          <CallToAction />
+        </div>
 
-        <DashedDivider className="mt-15 mb-15" />
+        <div className="flex w-screen flex-col items-center justify-center bg-[#0F192F] p-5.25">
+          <DashedDivider className="mt-15 mb-15" stroke="#242D42" />
 
-        <TextWrapper>
-          <Title
-            className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
-          >
-            Outras <Badge label="Dúvidas" />
-          </Title>
-
-          <BaseContent className="pt-7.5 pb-7">
-            Acontece que era isso que faltava na experiência, produção, nem
-            mesmo de camisetas. Tudo o que sabíamos.
-          </BaseContent>
-        </TextWrapper>
-        {faqs.map((faq, index) => (
-          <FAQCard
-            key={index}
-            Question={faq.question}
-            Answer={faq.answer}
-            className={index !== faqs.length - 1 ? "mb-7.5" : undefined}
-          />
-        ))}
+          {faqs.map((faq, index) => (
+            <FAQCard
+              key={index}
+              Question={faq.question}
+              Answer={faq.answer}
+              className={index !== faqs.length - 1 ? "mb-7.5" : undefined}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
