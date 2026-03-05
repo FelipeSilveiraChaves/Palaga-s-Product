@@ -8,7 +8,7 @@ export default function ParcelasComponent() {
       Por 12x de:
       <BorderBeam
         lightWidth={180}
-        borderWidth={2}
+        borderWidth={1}
         duration={5}
         lightColor="#FFFF"
         className="border-[#202A40] opacity-100"

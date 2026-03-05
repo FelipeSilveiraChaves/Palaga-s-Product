@@ -56,7 +56,7 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center justify-center gap-5 text-[#6f7481]">
-          <p className="cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:font-bold hover:text-[#0D99FF]">
+          <p className="cursor-pointer transition-all duration-200 hover:-translate-y-px hover:font-bold hover:text-[#0D99FF]">
             Email
           </p>
           <a
@@ -66,7 +66,7 @@ export default function Navbar() {
           >
             <FaInstagram
               size={26}
-              className="cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:text-[#D400C5]"
+              className="cursor-pointer transition-all duration-200 hover:-translate-y-px hover:text-[#D400C5]"
             />
           </a>
         </div>
