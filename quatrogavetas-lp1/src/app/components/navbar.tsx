@@ -56,8 +56,19 @@ export default function Navbar() {
         </Link>
 
         <div className="flex items-center justify-center gap-5 text-[#6f7481]">
-          <p>Email</p>
-          <FaInstagram color="#6f7481" size={26} />
+          <p className="cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:font-bold hover:text-[#0D99FF]">
+            Email
+          </p>
+          <a
+            href="https://instagram.com/palagabr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram
+              size={26}
+              className="cursor-pointer transition-all duration-200 hover:-translate-y-0.5 hover:text-[#D400C5]"
+            />
+          </a>
         </div>
       </nav>
     </motion.nav>
