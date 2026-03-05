@@ -4,8 +4,8 @@ import LocalStorageLpRegister from "../../components/localstoragelpregister";
 import BaseContent from "./components/paragraph";
 import TextWrapper from "./components/textwrapper";
 import { Title } from "./components/title";
-import AgendaLotada from "../../../../assets/images/agendalotada.png";
-import AgendaOrganizada from "../../../../assets/images/agendaorganizada.png";
+import AgendaLotada from "../../../../assets/images/agendalotadaMac.png";
+import AgendaOrganizada from "../../../../assets/images/agendaorganizadaMac.png";
 import LessonBlock from "./components/lessonblock";
 import CallToAction from "../../components/calltoaction";
 import FAQCard from "../../components/FAQ";
@@ -117,13 +117,16 @@ export default function LandingPageOne() {
           />
 
           <ReactCompareSlider
-            className="aspect-video h-full w-full max-w-187.5 overflow-hidden rounded-2xl"
-            position={35} // começa em 35% (mais pra esquerda)
-            itemOne={<Image src={AgendaLotada} alt="Imagem de Agenda lotada" />}
+            className="h-full w-full max-w-167.5 overflow-hidden rounded-2xl"
+            position={40} // começa em 35% (mais pra esquerda)
+            itemOne={
+              <Image src={AgendaOrganizada} alt="Imagem de Agenda lotada" />
+            }
             itemTwo={
               <Image
-                src={AgendaOrganizada}
+                src={AgendaLotada}
                 alt="Imagem de Agenda Organizada pelo método"
+                className="object-contain object-[center_55%]"
               />
             }
             handle={
