@@ -214,14 +214,14 @@ export default function LandingPageOne() {
           </TextWrapper>
           <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
           <DashedDivider className="mt-15 mb-15" />
-          <TextWrapper>
+          <TextWrapper className="flex flex-col items-center justify-center">
             <Title
               className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
             >
               E oferecemos a <br /> um <Badge label="Valor" /> justo
             </Title>
 
-            <BaseContent className="pt-7.5 pb-7.5">
+            <BaseContent className="w-[350px] pt-7.5 pb-7.5">
               Acontece que era isso que faltava na experiência, produção, nem
               mesmo de camisetas. Tudo o que sabíamos.
             </BaseContent>
