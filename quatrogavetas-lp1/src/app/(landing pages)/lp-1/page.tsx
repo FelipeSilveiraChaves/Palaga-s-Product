@@ -71,7 +71,7 @@ export default function LandingPageOne() {
           <TextWrapper>
             <Title>
               Então, pensamos em{" "}
-              <Badge className="sm:mt-2" label="Simplificar" />
+              <Badge className="sm:mb-2" label="Simplificar" />
             </Title>
 
             <BaseContent className="py-7">
@@ -108,6 +108,7 @@ export default function LandingPageOne() {
             lessonName="Bloco de notas"
             whichLesson="Aula 1"
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+            classNameBaseContent="pb-15"
           />
 
           <ReactCompareSlider
