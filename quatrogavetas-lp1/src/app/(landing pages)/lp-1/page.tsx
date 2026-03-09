@@ -60,7 +60,7 @@ export default function LandingPageOne() {
               complicado
             </Title>
           </TextWrapper>
-          <div className="aspect-4/3 w-full max-w-225 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-225 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
           <TextWrapper>
             <BaseContent className="pt-7">
               Acontece que era isso que faltava na experiência, produção, nem
@@ -85,7 +85,7 @@ export default function LandingPageOne() {
               experiência.
             </BaseContent>
           </TextWrapper>
-          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
           <TextWrapper>
             <BaseContent className="pt-7">
               Não tínhamos a mínima ideia de moda, produção, nem mesmo de
@@ -103,7 +103,7 @@ export default function LandingPageOne() {
               mesmo de camisetas. Tudo o que sabíamos era sobre bom.
             </BaseContent>
           </TextWrapper>
-          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Bloco de notas"
             whichLesson="Aula 1"
@@ -144,28 +144,28 @@ export default function LandingPageOne() {
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
             classNameBaseContent="pb-15"
           />
-          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Lista de tarefas"
             whichLesson="Aula 3"
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
             classNameBaseContent="pb-15"
           />
-          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Ritual Diário"
             whichLesson="Aula 4"
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
             classNameBaseContent="pb-15"
           />
-          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Ritual Semanal"
             whichLesson="Aula 5"
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
             classNameBaseContent="pb-15"
           />
-          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Ritual Mensal"
             whichLesson="Aula 6"
@@ -183,7 +183,7 @@ export default function LandingPageOne() {
               mesmo de camisetas. Tudo o que sabíamos.
             </BaseContent>
           </TextWrapper>
-          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
           <DashedDivider className="mt-15 mb-21" />
           <TextWrapper>
             <Title
@@ -197,7 +197,7 @@ export default function LandingPageOne() {
               mesmo de camisetas. Tudo o que sabíamos.
             </BaseContent>
           </TextWrapper>
-          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
           <DashedDivider className="mt-15 mb-21" />
           <TextWrapper>
             <Title
@@ -211,7 +211,7 @@ export default function LandingPageOne() {
               mesmo de camisetas. Tudo o que sabíamos.
             </BaseContent>
           </TextWrapper>
-          <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-video w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
 
           <DashedDivider className="mt-15 mb-21" />
 
