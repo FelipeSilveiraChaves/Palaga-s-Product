@@ -173,7 +173,8 @@ export default function LandingPageOne() {
           <DashedDivider className="mt-15 mb-21" />
           <TextWrapper>
             <Title>
-              Criamos, diversos <br /> <Badge label="Estudos" /> de caso
+              Criamos,
+              <br /> <Badge label="Estudos" /> de caso
             </Title>
 
             <BaseContent className="pt-7.5 pb-7">
