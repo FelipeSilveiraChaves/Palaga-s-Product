@@ -28,36 +28,36 @@ export default function CallToAction() {
         </span>
       </div>
 
-      <div className="mt-4 inline-flex h-8 items-center justify-center rounded-full border-[1.5px] border-[#F5F7FA80] bg-[#FFFFFF30] px-3 text-[18px] leading-6 text-[#F5F7FA] outline outline-[#F5F7FA50]">
+      <div className="mt-4 inline-flex h-8 items-center justify-center rounded-full border-[1.5px] border-[#F5F7FA80] bg-[#FFFFFF30] px-3 text-[20px] leading-6 text-[#F5F7FA] outline outline-[#F5F7FA50]">
         Ou R$ 97 à vista
       </div>
 
-      <div className="flex w-full flex-col items-center justify-center px-7.5 pt-7.5 pb-11.25">
-        <DashedDivider stroke="#E0E5EE15" className="mb-1" />
-        <div className="flex h-6 items-center justify-center">
+      <div className="flex w-full flex-col items-center justify-center px-7.5 pt-8 pb-11">
+        <DashedDivider stroke="#E0E5EE10" className="mb-1" />
+        <div className="flex items-center justify-center leading-6">
           <p className="text-[18px] leading-6 tracking-normal text-[#F5F7FA]">
             6 aulas de gestão do tempo
           </p>
         </div>
-        <DashedDivider stroke="#E0E5EE15" className="my-1" />
+        <DashedDivider stroke="#E0E5EE10" className="my-1" />
         <div className="flex h-6 items-center justify-center">
           <p className="text-[18px] leading-6 tracking-normal text-[#F5F7FA]">
             12 materiais complementares
           </p>
         </div>
-        <DashedDivider stroke="#E0E5EE15" className="my-1" />
+        <DashedDivider stroke="#E0E5EE10" className="my-1" />
         <div className="flex h-6 items-center justify-center">
           <p className="text-[18px] leading-6 tracking-normal text-[#F5F7FA]">
             Suporte de 1 ano
           </p>
         </div>
-        <DashedDivider stroke="#E0E5EE15" className="my-1" />
+        <DashedDivider stroke="#E0E5EE10" className="my-1" />
         <div className="flex h-6 items-center justify-center">
           <p className="text-[18px] leading-6 tracking-normal text-[#F5F7FA]">
             Garantia de 7 dias
           </p>
         </div>
-        <DashedDivider stroke="#E0E5EE15" className="my-1" />
+        <DashedDivider stroke="#E0E5EE10" className="my-1" />
         <div className="flex h-6 items-center justify-center">
           <p className="text-[18px] leading-6 tracking-normal text-[#F5F7FA] sm:text-xs">
             Acesso vitalício às atualizações

@@ -5,7 +5,7 @@ type DashedDividerProps = {
 
 export function DashedDivider({
   className = "",
-  stroke = "#E0E5EE", // valor padrão
+  stroke = "#E0E5EE50", // valor padrão
 }: DashedDividerProps) {
   return (
     <div className={`w-full ${className} max-w-125 px-7.25 md:max-w-screen`}>

@@ -9,10 +9,7 @@ import AgendaOrganizada from "../../../../assets/images/agendaorganizadaMac.png"
 import LessonBlock from "./components/lessonblock";
 import CallToAction from "../../components/calltoaction";
 import FAQCard from "../../components/FAQ";
-import {
-  ReactCompareSlider,
-  ReactCompareSliderHandle,
-} from "react-compare-slider";
+import { ReactCompareSlider } from "react-compare-slider";
 import Image from "next/image";
 import { MoveHorizontal } from "lucide-react";
 
@@ -58,24 +55,25 @@ export default function LandingPageOne() {
       <div className="flex w-full flex-col bg-[#F8FCFF]">
         <div className="flex h-full w-full flex-col items-center justify-center px-4">
           <TextWrapper>
-            <Title className="mb-7.5">
+            <Title className="mb-7">
               Ser <Badge label="Produtivo" /> anda muito complicado
             </Title>
           </TextWrapper>
-          <div className="aspect-video w-full max-w-225 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-225 rounded-2xl bg-[#F5F7FA]" />
           <TextWrapper>
             <BaseContent className="pt-7">
               Acontece que era isso que faltava na experiência, produção, nem
               mesmo de camisetas. Tudo o que sabíamos era sobre bom.
             </BaseContent>
           </TextWrapper>
-          <DashedDivider className="mt-15 mb-21" />
+          <DashedDivider className="mt-11 mb-21" />
           <TextWrapper>
             <Title>
-              Então, <br /> pensamos em <Badge label="Simplificar" />
+              Então, pensamos em{" "}
+              <Badge className="sm:mt-2" label="Simplificar" />
             </Title>
 
-            <BaseContent className="pt-7.5 pb-7">
+            <BaseContent className="py-7">
               Passamos um ano viajando por todo o país, conversando com pessoas.
             </BaseContent>
 
@@ -86,30 +84,25 @@ export default function LandingPageOne() {
               experiência.
             </BaseContent>
           </TextWrapper>
-          <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
           <TextWrapper>
-            <BaseContent className="py-7">
+            <BaseContent className="pt-7">
               Não tínhamos a mínima ideia de moda, produção, nem mesmo de
               camisetas. Tudo o que sabíamos era sobre bom.
             </BaseContent>
-
-            <BaseContent>
-              Acontece que era isso que faltava na experiência, produção, nem
-              mesmo de camisetas. Tudo o que sabíamos era sobre bom.
-            </BaseContent>
           </TextWrapper>
-          <DashedDivider className="mt-15 mb-21" />
+          <DashedDivider className="mt-11 mb-21" />
           <TextWrapper>
             <Title>
               Juntamos isso em <Badge label="6 Aulas" />
             </Title>
 
-            <BaseContent className="pt-7.5 pb-7">
+            <BaseContent className="pt-7 pb-11">
               Acontece que era isso que faltava na experiência, produção, nem
               mesmo de camisetas. Tudo o que sabíamos era sobre bom.
             </BaseContent>
           </TextWrapper>
-          <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Bloco de notas"
             whichLesson="Aula 1"
@@ -148,26 +141,30 @@ export default function LandingPageOne() {
             lessonName="Agenda"
             whichLesson="Aula 2"
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+            classNameBaseContent="pb-15"
           />
-          <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Lista de tarefas"
             whichLesson="Aula 3"
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+            classNameBaseContent="pb-15"
           />
-          <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Ritual Diário"
             whichLesson="Aula 4"
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+            classNameBaseContent="pb-15"
           />
-          <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Ritual Semanal"
             whichLesson="Aula 5"
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
+            classNameBaseContent="pb-15"
           />
-          <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
           <LessonBlock
             lessonName="Ritual Mensal"
             whichLesson="Aula 6"
@@ -184,8 +181,8 @@ export default function LandingPageOne() {
               mesmo de camisetas. Tudo o que sabíamos.
             </BaseContent>
           </TextWrapper>
-          <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-          <DashedDivider className="mt-15 mb-15" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <DashedDivider className="mt-15 mb-21" />
           <TextWrapper>
             <Title
               className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
@@ -198,8 +195,8 @@ export default function LandingPageOne() {
               mesmo de camisetas. Tudo o que sabíamos.
             </BaseContent>
           </TextWrapper>
-          <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-          <DashedDivider className="mt-15 mb-15" />
+          <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
+          <DashedDivider className="mt-15 mb-21" />
           <TextWrapper>
             <Title
               className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
@@ -213,15 +210,17 @@ export default function LandingPageOne() {
             </BaseContent>
           </TextWrapper>
           <div className="aspect-video w-full max-w-187.5 rounded-2xl bg-[#F5F7FA]" />
-          <DashedDivider className="mt-15 mb-15" />
-          <TextWrapper className="flex flex-col items-center justify-center">
+
+          <DashedDivider className="mt-15 mb-21" />
+
+          <TextWrapper className="sm:flex sm:flex-col sm:items-center sm:justify-center">
             <Title
               className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
             >
               E oferecemos a <br /> um <Badge label="Valor" /> justo
             </Title>
 
-            <BaseContent className="w-[350px] pt-7.5 pb-7.5">
+            <BaseContent className="w-87.5 pt-7 pb-7">
               Acontece que era isso que faltava na experiência, produção, nem
               mesmo de camisetas. Tudo o que sabíamos.
             </BaseContent>
@@ -233,14 +232,14 @@ export default function LandingPageOne() {
         </div>
 
         <div className="flex w-full flex-col items-center justify-center bg-[#0F192F]">
-          <DashedDivider className="mt-15 mb-15" stroke="#242D42" />
+          <DashedDivider className="mt-11 mb-11" stroke="#E0E5EE10" />
           <div className="px-5.25">
             {faqs.map((faq, index) => (
               <FAQCard
                 key={index}
                 Question={faq.question}
                 Answer={faq.answer}
-                className={index !== faqs.length - 1 ? "mb-7.5" : undefined}
+                className={index !== faqs.length - 1 ? "mb-5" : undefined}
               />
             ))}
           </div>
