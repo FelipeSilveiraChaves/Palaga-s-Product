@@ -56,7 +56,8 @@ export default function LandingPageOne() {
         <div className="flex h-full w-full flex-col items-center justify-center px-4">
           <TextWrapper>
             <Title className="mb-7">
-              Ser <Badge label="Produtivo" /> anda muito complicado
+              Ser <Badge label="Produtivo" className="-mb-2" /> anda muito
+              complicado
             </Title>
           </TextWrapper>
           <div className="aspect-4/3 w-full max-w-225 rounded-2xl bg-[#F5F7FA]" />
