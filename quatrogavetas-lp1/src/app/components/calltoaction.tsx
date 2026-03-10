@@ -7,11 +7,13 @@ import MockupMac from "../../../assets/images/68951360dc0e8215efde949a_010.jpeg"
 export default function CallToAction() {
   return (
     <div className="font-title flex w-full max-w-95.5 flex-col items-center justify-center rounded-b-4xl bg-transparent">
-      <Image
-        src={MockupMac}
-        alt="macbook com propaganda"
-        className="h-auto w-full rounded-2xl bg-[#F5F7FA]"
-      />
+      <div className="px-2">
+        <Image
+          src={MockupMac}
+          alt="macbook com propaganda"
+          className="h-auto w-full rounded-2xl bg-[#F5F7FA]"
+        />
+      </div>
       <ParcelasComponent />
 
       <div className="flex h-36 items-center justify-center">
