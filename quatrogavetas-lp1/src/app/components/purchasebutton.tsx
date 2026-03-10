@@ -17,7 +17,7 @@ export default function BuyButton() {
     >
       <BorderBeam
         lightWidth={180}
-        borderWidth={3}
+        borderWidth={2}
         duration={2}
         lightColor="#E0FE78"
         className="border-[#0D99FF] opacity-100"

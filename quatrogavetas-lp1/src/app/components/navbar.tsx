@@ -50,7 +50,7 @@ export default function Navbar() {
       }}
       style={{ pointerEvents: visible ? "auto" : "none" }}
     >
-      <nav className="mx-auto flex h-14.5 w-full max-w-187.5 items-center justify-between rounded-full border border-[#E1E1E1]/70 bg-white/78 pr-5.75 pl-8.25 shadow-[0px_2px_10px_rgba(0,0,0,0.03),0px_4px_8px_rgba(0,0,0,0.05)] backdrop-blur-md will-change-[backdrop-filter]">
+      <nav className="mx-auto flex h-14.5 w-full max-w-187.5 items-center justify-between rounded-full bg-white/78 pr-5.75 pl-8.25 shadow-[0_4px_8px_0_rgba(0,0,0,0.05),0_0_0_1.13px_rgba(6,6,5,0.063)] backdrop-blur-md will-change-[backdrop-filter]">
         <Link href={landingOrigin}>
           <FaInstagram color="#6f7481" size={26} />
         </Link>

@@ -55,7 +55,7 @@ export default function LandingPageOne() {
       <div className="flex w-full flex-col bg-[#F8FCFF]">
         <div className="flex h-full w-full flex-col items-center justify-center px-4">
           <TextWrapper>
-            <Title className="mb-7">
+            <Title className="mb-7 text-[52px]">
               Ser <Badge label="Produtivo" className="-mb-2" /> anda muito
               complicado
             </Title>
@@ -69,7 +69,7 @@ export default function LandingPageOne() {
           </TextWrapper>
           <DashedDivider className="mt-11 mb-21" />
           <TextWrapper>
-            <Title>
+            <Title className="text-[52px]">
               Então, pensamos em{" "}
               <Badge className="sm:mb-2" label="Simplificar" />
             </Title>
@@ -94,7 +94,7 @@ export default function LandingPageOne() {
           </TextWrapper>
           <DashedDivider className="mt-11 mb-21" />
           <TextWrapper>
-            <Title>
+            <Title className="text-[52px]">
               Juntamos isso em <Badge label="6 Aulas" />
             </Title>
 
@@ -172,11 +172,10 @@ export default function LandingPageOne() {
             whichLesson="Aula 6"
             description="Não tínhamos a mínima ideia de moda, produção, nem mesmo de camisetas. Tudo o que sabíamos era sobre bom."
           />
-          <DashedDivider className="mt-15 mb-21" />
+          <DashedDivider className="mt-11 mb-21" />
           <TextWrapper>
-            <Title>
-              Criamos,
-              <br /> <Badge label="Estudos" /> de caso
+            <Title className="text-[52px]">
+              Criamos, <Badge label="Estudos" /> de caso
             </Title>
 
             <BaseContent className="pt-7.5 pb-7">
@@ -185,11 +184,9 @@ export default function LandingPageOne() {
             </BaseContent>
           </TextWrapper>
           <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
-          <DashedDivider className="mt-15 mb-21" />
+          <DashedDivider className="mt-11 mb-21" />
           <TextWrapper>
-            <Title
-              className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
-            >
+            <Title className="text-[52px]">
               Treinamos uma <Badge label="Equipe" /> suporte
             </Title>
 
@@ -199,11 +196,9 @@ export default function LandingPageOne() {
             </BaseContent>
           </TextWrapper>
           <div className="aspect-4/3 w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
-          <DashedDivider className="mt-15 mb-21" />
+          <DashedDivider className="mt-11 mb-21" />
           <TextWrapper>
-            <Title
-              className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
-            >
+            <Title className="text-[52px]">
               Incluímos uma <Badge label="Garantia" />
             </Title>
 
@@ -214,16 +209,14 @@ export default function LandingPageOne() {
           </TextWrapper>
           <div className="aspect-video w-full max-w-187.5 rounded-2xl border border-blue-300 bg-[#F5F7FA]" />
 
-          <DashedDivider className="mt-15 mb-21" />
+          <DashedDivider className="mt-11 mb-21" />
 
-          <TextWrapper className="sm:flex sm:flex-col sm:items-center sm:justify-center">
-            <Title
-              className={`font-title text-[49px] leading-12.5 font-semibold tracking-[-0.99px] text-[#202A40]`}
-            >
-              E oferecemos a <br /> um <Badge label="Valor" /> justo
+          <TextWrapper className="sm:flex sm:max-w-110.5 sm:flex-col sm:items-start sm:justify-start">
+            <Title className="text-[49px]">
+              E oferecemos a um <Badge label="Valor" /> justo
             </Title>
 
-            <BaseContent className="w-87.5 pt-7 pb-7">
+            <BaseContent className="pt-7 pb-7">
               Acontece que era isso que faltava na experiência, produção, nem
               mesmo de camisetas. Tudo o que sabíamos.
             </BaseContent>
