@@ -56,7 +56,7 @@ export default function LandingPageOne() {
         <div className="flex h-full w-full flex-col items-center justify-center px-4">
           <TextWrapper>
             <Title className="mb-7 text-[52px]">
-              Ser <Badge label="Produtivo" className="-mb-2" /> anda muito
+              Ser <Badge label="Produtivo" classNameDiv="-mt-2" /> anda muito
               complicado
             </Title>
           </TextWrapper>
@@ -71,7 +71,7 @@ export default function LandingPageOne() {
           <TextWrapper>
             <Title className="text-[52px]">
               Então, pensamos em{" "}
-              <Badge className="sm:mb-2" label="Simplificar" />
+              <Badge classNameDiv="sm:-mb-1" label="Simplificar" />
             </Title>
 
             <BaseContent className="py-7">
