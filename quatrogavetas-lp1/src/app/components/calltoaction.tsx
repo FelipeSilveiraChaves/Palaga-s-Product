@@ -25,7 +25,7 @@ export default function CallToAction() {
           9
         </span>
 
-        <span className="-mb-11 -ml-1 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
+        <span className="-mb-7 -ml-0.5 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
           ,86
         </span>
       </div>
