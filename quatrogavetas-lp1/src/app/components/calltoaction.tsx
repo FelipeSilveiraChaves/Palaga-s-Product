@@ -17,16 +17,16 @@ export default function CallToAction() {
       <ParcelasComponent />
 
       <div className="flex h-36 items-center justify-center">
-        <div className="-mr-2 mb-2 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
+        <div className="-mr-1 -mb-7 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
           <span>R$</span>
         </div>
 
         <span className="text-[200px] font-semibold text-[#F5F7FA] antialiased [text-rendering:optimizeLegibility]">
-          8
+          9
         </span>
 
-        <span className="mb-12 -ml-2 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
-          ,08
+        <span className="-mb-11 -ml-1 text-[40px] leading-6 font-semibold tracking-[-0.99px] text-[#F5F7FA70]">
+          ,86
         </span>
       </div>
 
