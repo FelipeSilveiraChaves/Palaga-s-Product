@@ -7,7 +7,7 @@ import { palmer } from "@/lib/fonts";
 import SupportButton from "./components/fab";
 
 export const metadata: Metadata = {
-  title: "Palaga's palace",
+  title: "Cimbre",
   description: "É mais facil do que parece",
 };
 

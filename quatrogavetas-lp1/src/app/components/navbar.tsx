@@ -60,7 +60,7 @@ export default function Navbar() {
             Email
           </p>
           <a
-            href="https://instagram.com/palagabr"
+            href="https://www.instagram.com/cimbreee/"
             target="_blank"
             rel="noopener noreferrer"
           >
