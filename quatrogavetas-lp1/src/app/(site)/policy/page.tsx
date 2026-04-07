@@ -12,7 +12,7 @@ export default function privacyPolicy() {
         <div className="text-carbon-800 mt-10 flex flex-col gap-[29.2px] text-xl/[29.2px]">
           <p>
             A presente Política de Privacidade descreve como o site
-            www.palaga.com.br, mantido pela Interception Digital LTDA (CNPJ
+            www.cimbre.com.br, mantido pela Interception Digital LTDA (CNPJ
             49.821.411/0001-37), com sede em Rio Grande/RS, coleta, utiliza e
             protege os dados pessoais dos usuários. Ao acessar ou utilizar este
             site, o usuário declara estar ciente e de acordo com as práticas
@@ -87,7 +87,7 @@ export default function privacyPolicy() {
             sobre o uso de seus dados pessoais, atualizar informações, pedir
             exclusão, retirar consentimento ou esclarecer dúvidas relacionadas
             ao tratamento. Para isso, disponibilizamos o e-mail de contato
-            oficial contato@palaga.com.br, por meio do qual responderemos às
+            oficial contato@cimbre.com.br, por meio do qual responderemos às
             solicitações com base na legislação aplicável.
           </p>
           <p>
