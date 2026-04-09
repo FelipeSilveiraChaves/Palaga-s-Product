@@ -1,7 +1,7 @@
 export default function TermsOfUse() {
   return (
     <div className="flex w-full items-center justify-center px-6">
-      <div className="max-w-[580px]">
+      <div className="max-w-145">
         <h1 className="text-carbon-800 pb-2 text-[40px] leading-none tracking-[-0.4px] sm:text-5xl">
           Termos de uso
         </h1>
