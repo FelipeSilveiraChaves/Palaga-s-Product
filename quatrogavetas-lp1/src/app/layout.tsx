@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { gabarito, hanken } from "@/lib/fonts";
 import "./globals.css";
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
 import { palmer } from "@/lib/fonts";
 import SupportButton from "./components/fab";
 import MetaPixel from "./components/MetaPixel";
+import GoogleAnalytics from "./components/GoogleAnalyticsPixel";
 
 export const metadata: Metadata = {
   title: "Cimbre",
@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body
         className={`${gabarito.variable} ${hanken.variable} ${palmer.variable} font-base flex min-h-screen flex-col bg-[#F8FCFF] font-(--font-hanken) antialiased`}
       >
