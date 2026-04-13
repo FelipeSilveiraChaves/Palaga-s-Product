@@ -1,10 +1,8 @@
-"use client";
-
 import Script from "next/script";
 
-const GA_ID = "G-K4N4928EZ";
-
 export default function GoogleAnalytics() {
+  const GA_ID = "G-K4N49282EZ";
+
   return (
     <>
       <Script
@@ -13,10 +11,10 @@ export default function GoogleAnalytics() {
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_ID}');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
         `}
       </Script>
     </>
