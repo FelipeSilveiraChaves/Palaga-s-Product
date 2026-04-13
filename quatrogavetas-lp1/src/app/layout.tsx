@@ -19,12 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <head>
-        <GoogleAnalytics />
-      </head>
       <body
         className={`${gabarito.variable} ${hanken.variable} ${palmer.variable} font-base flex min-h-screen flex-col bg-[#F8FCFF] font-(--font-hanken) antialiased`}
       >
+        <GoogleAnalytics />
         <MetaPixel />
         <Navbar />
         <main className="flex min-h-screen flex-1 pt-32.5">{children}</main>
