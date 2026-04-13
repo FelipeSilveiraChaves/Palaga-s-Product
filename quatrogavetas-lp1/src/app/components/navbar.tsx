@@ -15,9 +15,18 @@ export default function Navbar() {
 
   useEffect(() => {
     const origin = localStorage.getItem("landingOrigin") || "lp-1";
-    setLandingOrigin(origin);
-  }, []); // <- importante: não ficar loopando
 
+    // Tenta recuperar UTMs salvas no sessionStorage
+    const storedUtms = sessionStorage.getItem("utms");
+
+    if (storedUtms) {
+      const utms = JSON.parse(storedUtms);
+      const params = new URLSearchParams(utms);
+      setLandingOrigin(`/${origin}?${params.toString()}`);
+    } else {
+      setLandingOrigin(origin);
+    }
+  }, []);
   useMotionValueEvent(scrollY, "change", (latest) => {
     const current = latest;
     const prev = lastY.current;
