@@ -15,7 +15,7 @@ type Props = { lpId: string };
 
 export default function LocalStorageLpRegister({ lpId }: Props) {
   useEffect(() => {
-    localStorage.setItem("landingOrigin", lpId);
+    sessionStorage.setItem("landingOrigin", lpId);
 
     // Captura UTMs da URL atual e salva no sessionStorage
     const params = new URLSearchParams(window.location.search);

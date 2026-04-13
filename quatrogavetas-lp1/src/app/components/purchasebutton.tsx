@@ -1,9 +1,17 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BorderBeam } from "@/components/ui/border-beam";
+import { buildCheckoutUrl } from "@/app/utils/buildCheckoutUrl";
+
 export default function BuyButton() {
-  const href = process.env.NEXT_PUBLIC_CHECKOUT_URL || "#";
+  const [href, setHref] = useState(process.env.NEXT_PUBLIC_CHECKOUT_URL || "#");
+
+  useEffect(() => {
+    const base = process.env.NEXT_PUBLIC_CHECKOUT_URL || "#";
+    setHref(buildCheckoutUrl(base));
+  }, []);
 
   return (
     <motion.a

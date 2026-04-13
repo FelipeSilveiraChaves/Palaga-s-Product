@@ -4,14 +4,10 @@ import LocalStorageLpRegister from "../../components/localstoragelpregister";
 import BaseContent from "./components/paragraph";
 import TextWrapper from "./components/textwrapper";
 import { Title } from "./components/title";
-import AgendaLotada from "../../../../assets/images/agendalotadaMac.png";
-import AgendaOrganizada from "../../../../assets/images/agendaorganizadaMac.png";
 import LessonBlock from "./components/lessonblock";
 import CallToAction from "../../components/calltoaction";
 import FAQCard from "../../components/FAQ";
-import { ReactCompareSlider } from "react-compare-slider";
-import Image from "next/image";
-import { MoveHorizontal } from "lucide-react";
+import AgendaCompareSlider from "./components/AgendaCompareSliderLazy";
 
 export default function LandingPageOne() {
   // padding ta 45 no total, px-4 no main container para o video, e px-7.25 nos textos. assim ficando 16px para os videos e 29px+16px = 45px para os textos
@@ -111,34 +107,7 @@ export default function LandingPageOne() {
             classNameBaseContent="pb-15"
           />
 
-          <ReactCompareSlider
-            className="h-full w-full max-w-167.5 overflow-hidden rounded-2xl"
-            position={40} // começa em 35% (mais pra esquerda)
-            itemOne={
-              <Image src={AgendaOrganizada} alt="Imagem de Agenda lotada" />
-            }
-            itemTwo={
-              <Image
-                src={AgendaLotada}
-                alt="Imagem de Agenda Organizada pelo método"
-                className="object-contain object-[center_55%]"
-              />
-            }
-            handle={
-              <div className="relative h-full">
-                {/* linha do meio */}
-                <div className="absolute top-0 left-1/2 h-full w-1.5 -translate-x-1/2 bg-[#202A40]" />
-
-                {/* botão */}
-                <div className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
-                  <div className="flex h-26 w-7.5 items-center justify-center rounded-full bg-[#0D99FF] shadow-md">
-                    {/* ÍCONE (troca aqui) */}
-                    <MoveHorizontal className="h-4 w-4 text-white" />
-                  </div>
-                </div>
-              </div>
-            }
-          />
+          <AgendaCompareSlider />
           <LessonBlock
             lessonName="Agenda"
             whichLesson="Aula 2"

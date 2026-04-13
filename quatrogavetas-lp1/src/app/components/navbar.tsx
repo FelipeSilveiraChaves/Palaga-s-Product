@@ -1,32 +1,32 @@
 "use client";
 
 import { FaInstagram } from "react-icons/fa6";
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useRef, useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 export default function Navbar() {
-  const [landingOrigin, setLandingOrigin] = useState("lp-1");
   const [visible, setVisible] = useState(true);
+  const router = useRouter();
 
   // Framer: scroll position
   const { scrollY } = useScroll();
   const lastY = useRef(0);
 
-  useEffect(() => {
-    const origin = localStorage.getItem("landingOrigin") || "lp-1";
-
-    // Tenta recuperar UTMs salvas no sessionStorage
+  function handleLogoClick() {
+    const origin = sessionStorage.getItem("landingOrigin") || "lp-1";
     const storedUtms = sessionStorage.getItem("utms");
 
     if (storedUtms) {
-      const utms = JSON.parse(storedUtms);
-      const params = new URLSearchParams(utms);
-      setLandingOrigin(`/${origin}?${params.toString()}`);
-    } else {
-      setLandingOrigin(origin);
+      try {
+        const utms = JSON.parse(storedUtms);
+        const params = new URLSearchParams(utms);
+        router.push(`/${origin}?${params.toString()}`);
+        return;
+      } catch {}
     }
-  }, []);
+    router.push(`/${origin}`);
+  }
   useMotionValueEvent(scrollY, "change", (latest) => {
     const current = latest;
     const prev = lastY.current;
@@ -60,9 +60,9 @@ export default function Navbar() {
       style={{ pointerEvents: visible ? "auto" : "none" }}
     >
       <nav className="mx-auto flex h-14.5 w-full max-w-187.5 items-center justify-between rounded-full bg-white/78 pr-5.75 pl-8.25 shadow-[0_4px_8px_0_rgba(0,0,0,0.05),0_0_0_1.13px_rgba(6,6,5,0.063)] backdrop-blur-md will-change-[backdrop-filter]">
-        <Link href={landingOrigin}>
+        <button onClick={handleLogoClick} className="cursor-pointer">
           <FaInstagram color="#6f7481" size={26} />
-        </Link>
+        </button>
 
         <div className="flex items-center justify-center gap-5 text-[#6f7481]">
           <p className="cursor-pointer transition-all duration-200 hover:-translate-y-px hover:font-bold hover:text-[#0D99FF]">
