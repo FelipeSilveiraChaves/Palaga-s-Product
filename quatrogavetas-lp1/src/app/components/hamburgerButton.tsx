@@ -19,6 +19,8 @@ export default function HamburgerButton() {
       <motion.button
         {...motionProps}
         onClick={toggle}
+        aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+        aria-expanded={isOpen}
         className="w-12 h-12 rounded-full bg-carbon-800 flex items-center justify-center pb-1 cursor-pointer outline-4 outline-carbon-0"
       >
         <div className="relative w-12 h-12 flex items-center justify-center">

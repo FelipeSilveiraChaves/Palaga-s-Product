@@ -18,6 +18,7 @@ export default function BuyButton() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Comprar o curso Cimbre"
       whileHover={{ y: 1 }}
       whileTap={{ y: 4 }}
       transition={{ type: "spring", stiffness: 200, damping: 10 }}
