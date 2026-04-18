@@ -65,22 +65,19 @@ export default function Navbar() {
         <button
           aria-label="Home"
           onClick={handleLogoClick}
-          className="cursor-pointer text-[#6f7481] transition-all duration-200 hover:-translate-y-px hover:text-[#0D99FF]"
+          className="cursor-pointer text-black transition-all duration-200 hover:-translate-y-px hover:text-[#0D99FF]"
         >
           <CimbreLogo className="h-7 w-auto" />
         </button>
 
         <div className="flex items-center justify-center gap-5 text-[#6f7481]">
           <p
-            aria-label="E-mail"
-            className="cursor-pointer transition-all duration-200 hover:-translate-y-px hover:font-bold hover:text-[#0D99FF]"
+            className="cursor-pointer text-lg transition-all duration-200 hover:-translate-y-px hover:font-bold hover:text-[#25D366]"
+            aria-label="Suporte Whatsapp"
           >
-            <BsWhatsapp
-              size={23}
-              className="cursor-pointer transition-all duration-200 hover:-translate-y-px hover:text-[#25D366]"
-              aria-label="Suporte Whatsapp"
-            />
+            WhatsApp
           </p>
+
           <a
             href="https://www.instagram.com/cimbreee/"
             target="_blank"
