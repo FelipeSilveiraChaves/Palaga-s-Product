@@ -2,8 +2,10 @@
 
 import { FaInstagram } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
+import CimbreLogo from "../../../assets/logomarca_preto-e-branco_v1.svg";
 import { useRef, useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { BsWhatsapp } from "react-icons/bs";
 
 export default function Navbar() {
   const [visible, setVisible] = useState(true);
@@ -59,13 +61,13 @@ export default function Navbar() {
       }}
       style={{ pointerEvents: visible ? "auto" : "none" }}
     >
-      <nav className="mx-auto flex h-14.5 w-full max-w-187.5 items-center justify-between rounded-full bg-white/78 pr-5.75 pl-8.25 shadow-[0_4px_8px_0_rgba(0,0,0,0.05),0_0_0_1.13px_rgba(6,6,5,0.063)] backdrop-blur-md will-change-[backdrop-filter]">
+      <nav className="mx-auto flex h-14.5 w-full max-w-187.5 items-center justify-between rounded-full bg-white/78 pr-5.75 pl-7.25 shadow-[0_4px_8px_0_rgba(0,0,0,0.05),0_0_0_1.13px_rgba(6,6,5,0.063)] backdrop-blur-md will-change-[backdrop-filter]">
         <button
           aria-label="Home"
           onClick={handleLogoClick}
-          className="cursor-pointer"
+          className="cursor-pointer text-[#6f7481] transition-all duration-200 hover:-translate-y-px hover:text-[#0D99FF]"
         >
-          <FaInstagram color="#6f7481" size={26} />
+          <CimbreLogo className="h-7 w-auto" />
         </button>
 
         <div className="flex items-center justify-center gap-5 text-[#6f7481]">
@@ -73,7 +75,11 @@ export default function Navbar() {
             aria-label="E-mail"
             className="cursor-pointer transition-all duration-200 hover:-translate-y-px hover:font-bold hover:text-[#0D99FF]"
           >
-            Email
+            <BsWhatsapp
+              size={23}
+              className="cursor-pointer transition-all duration-200 hover:-translate-y-px hover:text-[#25D366]"
+              aria-label="Suporte Whatsapp"
+            />
           </p>
           <a
             href="https://www.instagram.com/cimbreee/"
