@@ -17,16 +17,6 @@ export default function Navbar() {
 
   function handleLogoClick() {
     const origin = sessionStorage.getItem("landingOrigin") || "lp-1";
-    const storedUtms = sessionStorage.getItem("utms");
-
-    if (storedUtms) {
-      try {
-        const utms = JSON.parse(storedUtms);
-        const params = new URLSearchParams(utms);
-        router.push(`/${origin}?${params.toString()}`);
-        return;
-      } catch {}
-    }
     router.push(`/${origin}`);
   }
   useMotionValueEvent(scrollY, "change", (latest) => {
