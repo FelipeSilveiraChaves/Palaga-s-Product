@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import SupportButton from "./components/fab";
 import MetaPixel from "./components/MetaPixel";
 import GoogleAnalytics from "./components/GoogleAnalyticsPixel";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Cimbre",
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex min-h-screen flex-1 pt-32.5">{children}</main>
         <SupportButton href="/contact" />
+        <Analytics />
       </body>
     </html>
   );
