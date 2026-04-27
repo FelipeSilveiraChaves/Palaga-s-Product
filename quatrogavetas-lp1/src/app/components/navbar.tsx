@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import CimbreLogo from "../../../assets/logomarca_preto-e-branco_v1.svg";
 import { useRef, useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { BsWhatsapp } from "react-icons/bs";
 
 export default function Navbar() {
   const [visible, setVisible] = useState(true);
@@ -55,7 +54,7 @@ export default function Navbar() {
         <button
           aria-label="Home"
           onClick={handleLogoClick}
-          className="cursor-pointer text-black transition-all duration-200 hover:-translate-y-px hover:text-[#0D99FF]"
+          className="cursor-pointer text-[#2d2d2d] transition-all duration-200 hover:-translate-y-px hover:text-[#0D99FF]"
         >
           <CimbreLogo className="h-7 w-auto" />
         </button>
@@ -69,7 +68,7 @@ export default function Navbar() {
           </p>
 
           <a
-            href="https://www.instagram.com/cimbreee/"
+            href="https://www.instagram.com/cimbre.co/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
