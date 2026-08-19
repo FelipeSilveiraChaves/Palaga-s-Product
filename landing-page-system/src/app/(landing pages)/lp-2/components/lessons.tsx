@@ -21,14 +21,14 @@ const lessons: Lesson[] = [
   },
   {
     badge: "Aula 2",
-    title: "Bloco de Notas & Pensamentos Acionáveis.",
+    title: "Anotações & Pensamentos Acionáveis.",
     items: [
       "Aprenda o que são os “Pensamentos Acionáveis” e por que a sua mente não foi feita para guardá-los.",
     ],
   },
   {
     badge: "Aula 3",
-    title: "Agenda & Atividades Obrigatórias.",
+    title: "Compromissos & Atividades Obrigatórias.",
     items: [
       "Aprenda a diferença entre “Atividades Obrigatórias Participativas e Informativas” e como organizar a Agenda em cima delas.",
       "Aprenda como escrever compromissos do jeito certo: título curto, descrição cheia de informação útil.",
@@ -37,7 +37,7 @@ const lessons: Lesson[] = [
   },
   {
     badge: "Aula 4",
-    title: "Listas de Tarefas & Atividades Opcionais.",
+    title: "Tarefas & Atividades Opcionais.",
     items: [
       "Aprenda o que são as Atividades Opcionais e como organizar a Lista de Tarefas em cima delas.",
       "Aprenda por que três listas (curto prazo, longo prazo e delegadas) bastam para dar conta de tudo.",

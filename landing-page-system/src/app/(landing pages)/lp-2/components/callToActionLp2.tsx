@@ -6,8 +6,8 @@ import IniciarButton from "./iniciarButton";
 const lessons: string[] = [
   "Aula de abertura",
   "Aula sobre Agendas",
-  "Aula sobre Listas de Tarefas",
-  "Aula sobre Blocos de Notas",
+  "Aula sobre Tarefas",
+  "Aula sobre Anotações",
   "Aula sobre Planejamento Semanal",
   "Aula sobre Execução Diária",
   "Aula de revisão",

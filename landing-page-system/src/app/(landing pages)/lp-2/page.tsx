@@ -29,18 +29,18 @@ export default function LandingPageTwo() {
               <span className="flex items-center gap-3">
                 Seja
                 <Image
-                  src="/images/threeIcons.png"
-                  alt="Agenda, bloco de notas e lista de tarefas"
-                  width={277}
+                  src="/images/calendarIcon.png"
+                  alt="Agenda"
+                  width={133}
                   height={133}
-                  className="-mb-0.5 h-14.75 w-auto"
+                  className="-mb-0.5 -ml-1 h-14.75 w-auto"
                 />
               </span>
               organizado!
             </Title>
             <Subtitle className="my-5">
-              Aprenda a controlar a sua vida com uma Agenda, um Bloco de Notas e
-              uma Lista de Tarefas.
+              Usar uma Agenda não é tão fácil como parece. Por isso criamos um
+              curso técnico sobre elas.
             </Subtitle>
             <div className="flex gap-2">
               <CtaButton variant="primary" borderBeam targetId="preco" />
@@ -69,11 +69,11 @@ export default function LandingPageTwo() {
         >
           <TextWrapper padding="px-6">
             <Image
-              src="/images/threeIcons.png"
-              alt="Agenda, bloco de notas e lista de tarefas"
-              width={277}
-              height={133}
-              className="h-15 w-auto"
+              src="/images/calendarIcon.png"
+              alt="Agenda"
+              width={150}
+              height={150}
+              className="-mb-2 -ml-1 h-16 w-auto"
             />
             {/* imagem -> título: 16px */}
             <Title as="h2" className="mt-3">
